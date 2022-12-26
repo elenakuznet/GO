@@ -1,0 +1,59 @@
+.contacts {
+    padding: 50px 0;
+}
+
+.contacts__title {
+    margin-bottom: 40px;
+}
+
+.address {
+    margin-bottom: 39px;
+}
+
+.address__text {
+    font-style: normal;
+    white-space: pre-line;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+}
+
+.address__location {
+    margin-bottom: 38px;
+}
+
+.address__mobile {
+    margin-bottom: 11px;
+}
+
+.address__image {
+    margin-right: 30px;
+}
+
+.address__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social {
+    list-style: none;
+    font-size: 0;
+}
+
+.social__item {
+    display: inline-block;
+    margin-right: 26px;
+}
+
+.social__item:last-child {
+    margin-right: 0;
+}
+
+.social__link {
+    display: block;
+}

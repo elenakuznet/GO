@@ -1,0 +1,41 @@
+.reviews {
+    padding: 50px 0;
+}
+
+.reviews__title {
+    margin-bottom: 40px;
+}
+
+.reviews__item {
+    padding: 0 100px;
+    margin-bottom: 50px;
+    display: flow-root;
+}
+
+.reviews__item:last-child {
+    margin-bottom: 0;
+}
+
+.reviews__image {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    margin-bottom: 11px;
+}
+
+.review__picture {
+    margin-right: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.review__wrapper {
+    float: right;
+    padding: 52px 0 0 0;
+}
+
+.review__text {
+    display: inline-block;
+    max-width: 680px;
+    white-space: pre-line;
+}

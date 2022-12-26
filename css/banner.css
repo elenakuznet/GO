@@ -1,0 +1,40 @@
+.banner {
+    padding: 146px 0 50px 0; 
+    position: relative;
+}
+
+.banner::before { 
+    content: "";
+    background: url("../image/vr.png");
+    width: 675px;
+    height: 762px;
+    position: absolute;
+    display: block;
+    top: 207px;
+    left: 600px;
+    /* right: 170px; */
+    z-index: 0;
+}
+
+.banner__wrapper {
+    /* background-image: url("../image/vr.png");
+    background-repeat: no-repeat;
+    background-position: right 35px bottom;
+    background-size: 675px; */
+    min-height: 823px;
+}
+
+.banner__subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    padding-left: 100px;
+}
+
+.banner__title {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -0.1em;
+    z-index: 1;
+}

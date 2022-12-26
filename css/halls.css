@@ -1,0 +1,48 @@
+.halls {
+    padding: 50px 0;
+}
+
+.halls__item {
+    min-height: 710px;
+    padding: 275px 485px;
+}
+
+.halls__item:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.halls__link {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 114%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.halls__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.halls__title {
+    margin-bottom: 60px;
+}
+
+.neon {
+    background-image: url("../image/rooms/neon-style.jpg");
+}
+
+.starwars {
+    background-image: url("../image/rooms/star-wars.jpg");
+}
+
+.vibes {
+    background-image: url("../image/rooms/80s-vibes.jpg");
+}
+
+.wildwest {
+    background-image: url("../image/rooms/wild-west.jpg")
+}
