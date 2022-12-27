@@ -3,46 +3,60 @@
 }
 
 .halls__item {
-    min-height: 710px;
-    padding: 275px 485px;
+    min-width: 580px;
+    min-height: 349px;
+    text-align: center;
+    padding: 135px 0 0 0;
+    float: right;
 }
 
-.halls__item:not(:last-child) {
-    margin-bottom: 60px;
+.halls__item:not(:nth-child(2n)) {
+    margin-right: 20px;
+    float: left;
+}
+
+.halls__item:first-child {
+    margin-bottom: 20px;
 }
 
 .halls__link {
     font-weight: 700;
     font-size: 70px;
     line-height: 114%;
-    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
 }
 
 .halls__list {
+    display: flow-root;
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .halls__title {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .neon {
     background-image: url("../image/rooms/neon-style.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .starwars {
     background-image: url("../image/rooms/star-wars.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .vibes {
     background-image: url("../image/rooms/80s-vibes.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .wildwest {
-    background-image: url("../image/rooms/wild-west.jpg")
+    background-image: url("../image/rooms/wild-west.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
