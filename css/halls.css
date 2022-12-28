@@ -6,18 +6,23 @@
     min-width: 580px;
     min-height: 349px;
     text-align: center;
-    padding: 135px 0 0 0;
-    float: right;
+    padding: 135px 0;
+    margin: 10px;
 }
 
-.halls__item:not(:nth-child(2n)) {
-    margin-right: 20px;
+.halls__item:not(:nth-child(odd)) {
+    /* margin-right: 20px; */
     float: left;
 }
 
-.halls__item:first-child {
-    margin-bottom: 20px;
+.halls__item:not(:nth-child(even)) {
+    /* margin-right: 20px; */
+    float: right;
 }
+
+/* .halls__item:first-child {
+    margin-bottom: 20px;
+} */
 
 .halls__link {
     font-weight: 700;
@@ -30,6 +35,7 @@
 
 .halls__list {
     display: flow-root;
+    margin: -10px;
     list-style: none;
 }
 
