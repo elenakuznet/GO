@@ -1,7 +1,159 @@
 .booking {
     padding: 50px 0;
+    background: #440F51;
 }
 
 .booking__title {
     margin-bottom: 50px;
+}
+
+.booking__row {
+    display: flex;
+    border: 0;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.booking__legend {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choice {
+    margin-bottom: 60px;
+}
+
+.booking__column {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.booking__input {
+    display: none;
+}
+
+.booking__option {
+    display: inline-block;
+}
+
+.entertaiment {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+.booking__hall {
+    display: inline-block;
+	padding: 7px 15px 8px;
+	line-height: 34px;
+	background: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.console {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-game {
+    display: flex;
+    flex-direction: column;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking__select {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.booking__date {
+    display: inline-block;
+	padding: 12px 70px 12px 20px;
+	line-height: 34px;
+	background: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;
+    position: relative;
+}
+
+.booking__date::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    transform: translateY(-50%);
+    display: block;
+    width: 21px;
+    height: 15px;
+    background: url("../image/booking/arrow.png");
+    background-repeat: no-repeat;
+}
+
+.booking__button {
+    width: 300px;
+    height: 60px;
+    padding: 16px 50px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #6C0287;
+}
+
+.label {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.input {
+    width: 300px;
+    height: 52px;
+    display: block;
+	padding: 12px 70px 12px 20px;
+	line-height: 34px;
+	background: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;
+}
+
+.input-name {
+    width: 280px;
+    height: 52px;
+    display: block;
+	padding: 12px 70px 12px 20px;
+	line-height: 34px;
+	background: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #211E1E;
+}
+
+.data {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
 }

@@ -1,9 +1,16 @@
 .contacts {
     padding: 50px 0;
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .contacts__title {
     margin-bottom: 40px;
+}
+
+.contacts__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
 }
 
 .address {
@@ -56,4 +63,12 @@
 
 .social__link {
     display: block;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }

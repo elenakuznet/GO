@@ -1,0 +1,61 @@
+.equipment {
+    padding: 50px 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px 20px;
+}
+
+.equipment__title {
+    margin-bottom: 40px;
+    white-space: pre-line;
+}
+
+.equipment__item {
+    width: 380px;
+    height: 228px;
+}
+
+.vr {
+    background-image: url("../image/equipment/vr.jpg");
+    background-repeat: no-repeat;
+    padding: 166px 40px 34px;
+}
+
+.audio {
+    background-image: url("../image/equipment/audio.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 166px 40px 6px;
+}
+
+.micro {
+    background-image: url("../image/equipment/micro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 166px 40px 20px;
+}
+
+.game {
+    background-image: url("../image/equipment/game.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 166px 40px 20px;
+}
+
+.netflix {
+    background-image: url("../image/equipment/netflix.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 166px 40px 6px;
+}
+
+.sony {
+    background-image: url("../image/equipment/sony.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 166px 40px 20px;
+}

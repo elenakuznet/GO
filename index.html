@@ -17,71 +17,93 @@
     
 </head>
 <body>
-    <!-- <div class="wrapper">
-        <header>
-            <img src="img/logo.svg" alt="logo">
-            <p><b>Меню</b></p>
-            <nav>
-                <ul>
-                    <li><a href="#rooms">Залы</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#booking">Бронь</a></li>
-                    <li><a href="#reviews">Отзывы</a></li>
-                    <li><a href="#question">Частые вопросы</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </header> -->
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <img src="image/header/logo.png" alt="logo">
+                    <!-- <p><b>Меню</b></p> -->
+                    <nav>
+                        <ul class="header__list">
+                            <li class="header__item"><a class="header__link" href="#rooms">Залы</a></li>
+                            <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
+                            <li class="header__item"><a class="header__link" href="#booking">Бронь</a></li>
+                            <li class="header__item"><a class="header__link" href="#reviews">Отзывы</a></li>
+                            <!-- <li class="header__item"><a class="header__link" href="#question">Частые вопросы</a></li> -->
+                            <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="header__button">Заказать звонок</button>
+                </div>
+            </div>   
+        </header>
 
-        <main>
-            <!-- <section>
-            <h1>У нас есть всё для классного отдыха с друзьями!</h1>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="img/vr.jpg" alt="VR очки" width="380" height="228">
-                        <figcaption>VR очки</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/audio.jpg" alt="Аудио система 5.1 с отличным звуком" width="380" height="228">
-                        <figcaption>Аудио система 5.1 с отличным звуком</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/micro.jpg" alt="Караоке" width="380" height="228">
-                        <figcaption>Караоке (4 микрофона)</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/game.jpg" alt="Настольные игры" width="380" height="228">
-                        <figcaption>Настольные игры</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/netflix.jpg" alt="Кино сервисы Netflix,IVI,MegoGo,Кинопоиск,Okko" width="380" height="228">
-                        <figcaption>Кино сервисы Netflix,IVI,MegoGo,Кинопоиск,Okko</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/sony.jpg" alt="PlayStation 5" width="380" height="228">
-                        <figcaption>PlayStation 5</figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section> -->
+        <main>  
         <section class="banner">
             <div class="container banner__wrapper">
                 <h1 class="banner__title">GAME OVER</h1>
                 <p class="banner__subtitle">Новый формат игр и отдыха</p>
+                <div class="banner__row">
+                    <div class="banner__column">
+                        <p class="number">4</p>
+                        <p>Тематических
+                            зала</p>
+                    </div>
+                    <div class="banner__column">
+                        <p class="purple">new</p>
+                        <p>Новейшая
+                            аппаратура</p>
+                    </div>
+                </div>
+                <button class="banner__button">Забронировать</button>
+                <img class="banner__arrow" src="image/banner/down.png" alt="кнопка вниз">
             </div>
         </section>
 
+        <section class="equipment">
+            <div class="container">
+                <h2 class="title equipment__title">У нас есть все для классного 
+                    отдыха с друзьями!</h2>
+                <ul class="flex">
+                    <li class="equipment__item vr">
+                        <figure>
+                            <!-- <img class="equipment__image" src="img/vr.jpg" alt="VR очки" width="380" height="228"> -->
+                            <figcaption>VR очки</figcaption>
+                        </figure>
+                    </li>
+                    <li class="equipment__item audio">
+                        <figure>
+                            <!-- <img class="equipment__image" src="img/audio.jpg" alt="Аудио система 5.1 с отличным звуком" width="380" height="228"> -->
+                            <figcaption>Аудио система 5.1 с отличным звуком</figcaption>
+                        </figure>
+                    </li>
+                    <li class="equipment__item micro">
+                        <figure>
+                            <!-- <img class="equipment__image" src="img/micro.jpg" alt="Караоке" width="380" height="228"> -->
+                            <figcaption>Караоке (4 микрофона)</figcaption>
+                        </figure>
+                    </li>
+                    <li class="equipment__item game">
+                        <figure>
+                            <!-- <img class="equipment__image" src="img/game.jpg" alt="Настольные игры" width="380" height="228"> -->
+                            <figcaption>Настольные игры</figcaption>
+                        </figure>
+                    </li>
+                    <li class="equipment__item netflix">
+                        <figure>
+                            <!-- <img class="equipment__image" src="img/netflix.jpg" alt="Кино сервисы Netflix,IVI,MegoGo,Кинопоиск,Okko" width="380" height="228"> -->
+                            <figcaption>Кино сервисы Netflix,IVI,MegoGo,Кинопоиск,Okko</figcaption>
+                        </figure>
+                    </li>
+                    <li class="equipment__item sony">
+                        <figure>
+                            <!-- <img class="equipment__image" src="img/sony.jpg" alt="PlayStation 5" width="380" height="228"> -->
+                            <figcaption>PlayStation 5</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
         <section id="rooms" class="halls">
             <div class="container">
                 <h2 class="title halls__title">Наши залы</h2>
@@ -96,26 +118,38 @@
         <!-- Form 2 -->
         <section id="booking" class="booking">
             <div class="container">
-                <h2 class="title booking__title">Забронировать</h2>
+                <h2 class="title booking__title">Забронировать зал просто</h2>
                 <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-                    <fieldset>
-                        <legend>Выбери зал</legend>
-                        <label>
-                            <input type="radio" name="room" value="80's vibes">80's vibes
-                        </label>
-                        <label>
-                            <input type="radio" name="room" value="Star wars">Star wars
-                        </label>
-                        <label>
-                            <input type="radio" name="room" value="Wild west">Wild west
-                        </label>
-                        <label>
-                            <input type="radio" name="room" value="Neon style">Neon style
-                        </label>
+                    <fieldset class="booking__row choice">
+                        <legend class="booking__legend">Выбери зал</legend>
+                        <div class="booking__option">
+                            <label class="booking__hall">80's vibes
+                                <input class="booking__input" type="radio" name="room" value="80's vibes">
+                            </label>
+                        </div>
+    
+                        <div class="booking__option">
+                            <label class="booking__hall">
+                                <input class="booking__input" type="radio" name="room" value="Star wars">Star wars
+                            </label>
+                        </div>
+
+                        <div class="booking__option">
+                            <label class="booking__hall">
+                                <input class="booking__input" type="radio" name="room" value="Wild west">Wild west
+                            </label>
+                        </div>
+                        
+                        <div class="booking__option">
+                            <label class="booking__hall">
+                                <input class="booking__input" type="radio" name="room" value="Neon style">Neon style
+                            </label>
+                        </div>
+                        
                     </fieldset>
-                    <fieldset>
-                        <legend>Собери набор развлечений</legend>
-                        <fieldset>
+                    <fieldset class="booking__row entertainment">
+                        <legend class="booking__legend">Собери набор развлечений</legend>
+                        <fieldset class="booking__column console">
                             <legend>Приставка:</legend>
                             <label>
                                 <input type="radio" name="game_console" value="PlayStation">PlayStation
@@ -130,7 +164,7 @@
                                 <input type="radio" name="game_console" value="Dendy">Dendy
                             </label>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="booking__column table-game">
                             <legend>Настольные игры</legend>
                             <label>
                                 <input type="checkbox" name="table_game" value="Jenga">Jenga
@@ -145,7 +179,7 @@
                                 <input type="checkbox" name="table_game" value="Alias">Alias
                             </label>    
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="booking__column extra">
                             <legend>Дополнительно</legend>
                             <label>
                                 <input type="checkbox" name="extra" value="caraoke">Караоке
@@ -155,41 +189,50 @@
                             </label>
                         </fieldset>
                     </fieldset>
-                    <fieldset>
-                        <legend>Выбери дату и время</legend>
-                        <div>
-                            <div>
-                                <label>Дата*
-                                <input type="date" name="date" required>
-                                </label>
-                                <label>Время*
-                                    <input type="time" name="time" required>
+                    <fieldset class="booking__row data">
+                        <legend class="booking__legend">Выбери дату и время</legend>
+                        <div class="booking__row">
+                            <div class="booking__column">
+                                <div class="booking__select">
+                                    <label class="booking__date">Дата
+                                        <!-- <select class="select" name="data" id="data" placeholder="Date">
+                                            <option disabled>Выберите героя</option>
+                                        </select> -->
+                                        <input class="booking__input" type="date" name="date" required>
+                                    </label>
+                                    <label class="booking__date">Время
+                                        <input class="booking__input" type="time" name="time" required>
+                                    </label>
+                                </div>
+
+                                <label class="booking__date">Количество человек
+                                    <input class="booking__input" type="number" name="people" required>
                                 </label>
                             </div>
-                            <label>Количество человек*
-                                <input type="number" name="people" required>
-                            </label>
+                            
+                        <div class="booking__column">
+                            <div>
+                                <label class="label">Имя
+                                    <input class="input-name" type="text" name="name" required>
+                                </label>
+                            </div>
+                            <div>
+                                <label class="label">Фамилия
+                                    <input class="input-name" type="text" name="family_name" required>
+                                </label>
+                            </div>
                         </div>
-                        <div>
-                            <label>Имя*
-                                <input type="text" name="name" required>
+                        <div class="booking__column">
+                            <label class="label">Телефон
+                                <input class="input" type="tel" name="tel" required>
                             </label>
-                            <br>
-                            <label>Фамилия*
-                                <input type="text" name="family_name" required>
+                            <label class="label">E-mail
+                                <input class="input" type="email" name="email" required>
                             </label>
-                            <br>
+                            <button class="booking__button" type="submit">Забронировать</button>
                         </div>
-                        <div>
-                            <label>Телефон*
-                                <input type="tel" name="tel" required>
-                            </label>
-                            <label>E-mail*
-                                <input type="email" name="email" required>
-                            </label>
-                        </div>   
-                    </fieldset>
-                    <button type="submit">Забронировать</button>
+                    </div>   
+                    </fieldset> 
                 </form>
             </div>
             
@@ -242,7 +285,6 @@
                         <div class="review__wrapper">
                             <p class="review__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив!У нас в городе больше нет подобных заведений!</p>
                         </div>
-                        
                     </li>
                     <li class="reviews__item">
                         <figure class="review__picture">
@@ -274,33 +316,45 @@
         <footer id="contacts" class="contacts">
             <div class="container">
                 <h2 class="title contacts__title">Контакты</h2>
-                <address class="address">
-                    <div class="address__location">
-                        <img class="address__image" src="image/contacts/location.svg" alt="адресс иконка">
-                        <p class="address__text">г. Москва 
-                        ул. Аквамарина 16</p>
+                <div class="contacts__row">
+                    <div class="contacts__column">
+                        <address class="address">
+                            <div class="address__location">
+                                <img class="address__image" src="image/contacts/location.svg" alt="адресс иконка">
+                                <p class="address__text">г. Москва 
+                                ул. Аквамарина 16</p>
+                            </div>
+                            <div class="address__mobile">
+                                <img class="address__image" src="image/contacts/phone.svg" alt="телефон иконка">
+                                <a class="address__link"  href="tel:89509302893">8(950)930-28-93</a>
+                            </div>
+                            <div class="address__email">
+                                <img class="address__image" src="image/contacts/envelope.svg" alt="почта иконка" >
+                                <a class="address__link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+                            </div>
+                        </address>
+                        <!-- <nav> -->
+                            <ul class="social">
+                                <li class="social__item"><a class="social__link" href="https://vk.com" target="_blank"><img src="image/contacts/vk.svg" alt="вконтакте лого"></a></li>
+                                <li class="social__item"><a class="social__link" href="https://telegram.org" target="_blank"><img src="image/contacts/telegram.svg" alt="телеграмм лого"></a></li>
+                                <li class="social__item"><a class="social__link" href="https://www.pinterest.com" target="_blank"><img src="image/contacts/pinterest.svg" alt="пинтерест лого"></a></li>
+                                <li class="social__item"><a class="social__link" href="https://www.stumbleupon.com" target="_blank"><img src="image/contacts/stumbleupon.svg" alt="стаблеупон лого"></a></li>
+                            </ul>
                     </div>
-                    <div class="address__mobile">
-                        <img class="address__image" src="image/contacts/phone.svg" alt="телефон иконка">
-                        <a class="address__link"  href="tel:89509302893">8(950)930-28-93</a>
-                    </div>
-                    <div class="address__email">
-                        <img class="address__image" src="image/contacts/envelope.svg" alt="почта иконка" >
-                        <a class="address__link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-                    </div>
-
-                </address>
-                <!-- <nav> -->
-                    <ul class="social">
-                        <li class="social__item"><a class="social__link" href="https://vk.com" target="_blank"><img src="image/contacts/vk.svg" alt="вконтакте лого"></a></li>
-                        <li class="social__item"><a class="social__link" href="https://telegram.org" target="_blank"><img src="image/contacts/telegram.svg" alt="телеграмм лого"></a></li>
-                        <li class="social__item"><a class="social__link" href="https://www.pinterest.com" target="_blank"><img src="image/contacts/pinterest.svg" alt="пинтерест лого"></a></li>
-                        <li class="social__item"><a class="social__link" href="https://www.stumbleupon.com" target="_blank"><img src="image/contacts/stumbleupon.svg" alt="стаблеупон лого"></a></li>
-                    </ul>
+                    <img src="image/contacts/map.jpg" alt="карта местности">
+                </div>
                 <!-- </nav>    -->
-            </div>
             
+                    <div class="footer__row">
+                    <p>© Game Over, 2022</p>
+                    <ul>
+                        <li><p>Design by Anastasia Ilina</p></li>
+                        <li><p>ilina9825@gmail.com</p></li>
+                    </ul>
+                </div>
+            </div>
         </footer> 
+    
         <!-- Form 1
         <div>
             <p>Заказать звонок</p>
