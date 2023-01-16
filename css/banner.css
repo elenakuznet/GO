@@ -1,20 +1,6 @@
 .banner {
     /* padding: 146px 0 50px 0;  */
     padding: 25px 0 50px 0;
-    position: relative;
-}
-
-.banner::before { 
-    /* content: "";
-    background: url("../image/vr.png");
-    width: 675px;
-    height: 762px;
-    position: absolute;
-    display: block;
-    top: 100px;
-    left: 600px; */
-    /* right: 170px; */
-    /* z-index: 0; */
 }
 
 .banner__wrapper {
@@ -23,17 +9,7 @@
     background-position: right 35px bottom;
     background-size: 675px; */
     min-height: 823px;
-}
-
-.banner__wrapper::before {
-    content: "";
-    background: url("../image/banner/vr.png");
-    width: 675px;
-    height: 762px;
-    position: absolute;
-    display: block;
-    top: 100px;
-    left: 600px;
+    position: relative;
 }
 
 .banner__subtitle {
@@ -50,18 +26,32 @@
     line-height: 100%;
     letter-spacing: -0.1em;
     text-align: left;
-    /* z-index: 1; */
     margin-bottom: 0;
+    position: relative;
+}
+
+.banner__title::before {
+    content: "";
+    background: url("../image/banner/vr.png");
+    width: 675px;
+    height: 762px;
+    position: absolute;
+    display: block;
+    top: 61px;
+    left: 505px;
 }
 
 .banner__row {
     display: flex;
+    max-height: 209px;
     gap: 40px;
     margin-bottom: 150px;
     align-items: flex-end;
 }
 
 .banner__column {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     white-space: pre-line;
     margin-right: 40px;
@@ -123,9 +113,9 @@
 .banner__arrow {
     display: inline-block;
     position: absolute;
+    right: 544px;
     bottom: 90px;
-    right: 620px;
     width: 97px;
     height: 97px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
