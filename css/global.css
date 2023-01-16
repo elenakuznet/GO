@@ -72,3 +72,18 @@ iframe {
     padding: 0 30px;
     margin: 0 auto;
 }
+
+.section {
+    padding: 50px 0;
+}
+
+.section__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 40px;
+}

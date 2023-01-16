@@ -1,6 +1,6 @@
 @import "style.css";
-/* @import "faq.css"; */
 @import "global.css";
+@import "normalize.css";
 @import "banner.css";
 @import "halls.css";
 @import "booking.css";

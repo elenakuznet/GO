@@ -1,5 +1,5 @@
 .contacts {
-    padding: 50px 0;
+    /* padding: 50px 0; */
     background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
@@ -65,7 +65,7 @@
     display: block;
 }
 
-.footer__row {
+.footer {
     display: flex;
     justify-content: space-between;
     font-weight: 400;
