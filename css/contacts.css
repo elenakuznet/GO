@@ -63,7 +63,23 @@
 
 .social__link {
     display: block;
+    color: #ffffff;
+    outline: 1px solid transparent;
 }
+
+
+.social__link:hover {
+    color: #EADEED;
+}
+
+.social__link:active {
+    color: #CD06FF;
+}
+
+.social__link:focus {
+    outline-color: #CD06FF;
+    color: #EADEED;
+} 
 
 .footer {
     display: flex;

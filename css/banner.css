@@ -110,6 +110,16 @@
     border-radius: 10px;
 }
 
+.banner__button:hover, .banner__button:focus {
+    background: #840AA3;
+    border-radius: 10px;
+}
+
+.banner__button:active {
+    background: #640AA3;
+    border-radius: 10px;
+}
+
 .banner__arrow {
     display: inline-block;
     position: absolute;
@@ -117,5 +127,26 @@
     bottom: 90px;
     width: 97px;
     height: 97px;
+    color: transparent;
+    fill: #ffffff;
+    stroke: #ffffff;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
     /* margin: 0 auto; */
+}
+
+.banner__arrow:hover { 
+    color: #ffffff;
+    fill: #640AA3;
+    stroke: none;
+}
+
+.banner__arrow:active {
+    color: #CD06FF;
+    fill: #ffffff;
+    stroke: none;
+}
+
+.banner__arrow:focus {
+    outline-color: #CD06FF;
 }
