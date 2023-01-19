@@ -8,6 +8,8 @@
     text-align: center;
     padding: 135px 0;
     margin: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .halls__item:not(:nth-child(odd)) {
@@ -43,26 +45,18 @@
     margin-bottom: 40px;
 }
 
-.neon {
-    background-image: url("../image/rooms/neon-style.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+.halls__item--neon {
+    background-image: url("../image/rooms/neon-style.jpg"); 
 }
 
-.starwars {
+.halls__item--starwars {
     background-image: url("../image/rooms/star-wars.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.vibes {
+.halls__item--vibes {
     background-image: url("../image/rooms/80s-vibes.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
-.wildwest {
+.halls__item--wildwest {
     background-image: url("../image/rooms/wild-west.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
 }
