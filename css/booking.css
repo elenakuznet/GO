@@ -24,7 +24,6 @@
 }
 
 .entertainment {
-    /* max-width: 1080px; */
     padding-left: 40px;
     justify-content: center;
     gap: 100px;
@@ -33,12 +32,10 @@
 
 .legend {
     margin-bottom: 23px;
-    /* margin-left: -22px; */
     white-space: nowrap;
 }
 
 .data {
-    /* max-width: 980px; */
     margin-bottom: 40px;
     gap: 50px;
     justify-content: center;
@@ -69,6 +66,8 @@
 }
 
 .booking__hall {
+    width: 50px;
+    height: 50px;
     min-width: 250px;
 	padding: 7px 15px 8px;
 	line-height: 34px;
@@ -88,15 +87,22 @@
     outline: 3px solid #640AA3;
 }
 
-.booking__hall:active {
-    background: #6C0287;
-    outline: 3px solid #FFFFFF;
-}
-
 .booking__hall:focus {
     background: #FFFFFF;
     outline: 3px solid #640AA3;
 }
+
+.hall-input:checked + .booking__hall {
+    background: #6C0287;
+    color: #ffffff;
+    outline: 3px solid #FFFFFF;
+}
+
+/* .booking__hall:active {
+    background: #6C0287;
+    color: #ffffff;
+    outline: 3px solid #FFFFFF;
+} */
 
 /* .radio {
     position: relative;
@@ -197,10 +203,6 @@
     opacity: 1;
 }
 
-.checkbox:last-child {
-    margin-bottom: 0;
-}
-
 .checkbox__input:focus::before {
     outline-color: #CD06FF;
 }
@@ -251,14 +253,6 @@
 .booking__input:focus {
     outline-color: #CD06FF;
 }
-/* .booking__date {
-    padding: 12px 65px 12px 20px;
-	background: #FFFFFF;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #211E1E;
-} */
 
 .booking__input--number {
     min-width: 300px;

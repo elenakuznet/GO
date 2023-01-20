@@ -121,32 +121,34 @@
 }
 
 .banner__arrow {
-    display: inline-block;
+    /* display: inline-block; */
     position: absolute;
     right: 544px;
     bottom: 90px;
+    background-image: url("../image/banner/down.svg");
+    background-repeat: no-repeat;
     width: 97px;
-    height: 97px;
-    color: transparent;
-    fill: #ffffff;
-    stroke: #ffffff;
+    height: 97px; 
     outline: 1px solid transparent;
-    outline-offset: 3px;
+    /* color: transparent; */
+    /* fill: #ffffff;
+    stroke: #ffffff; */
+    /* color: transparent;
+    stroke: #ffffff;
+    fill: #ffffff; */
     /* margin: 0 auto; */
 }
 
-.banner__arrow:hover { 
-    color: #ffffff;
-    fill: #640AA3;
-    stroke: none;
-}
 
-.banner__arrow:active {
-    color: #CD06FF;
-    fill: #ffffff;
-    stroke: none;
+.banner__arrow:hover {
+    background-image: url("../image/banner/down-hover.svg");
 }
 
 .banner__arrow:focus {
+    background-image: url("../image/banner/down.svg");
     outline-color: #CD06FF;
+}
+
+.banner__arrow:active {
+    background-image: url("../image/banner/down-active.svg");
 }

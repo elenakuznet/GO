@@ -62,7 +62,6 @@
 }
 
 .social__link {
-    text-decoration: none;
     display: block;
     color: #ffffff;
     outline: 1px solid transparent;
@@ -87,4 +86,20 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+}
+
+.footer__link:hover {
+    color: #EADEED;
+}
+
+.footer__link:focus, .footer__link:active {
+    color: #CD06FF;
+}
+
+.footer__mail:hover {
+    color: #EADEED;
+}
+
+.footer__mail:focus, .footer__mail:active {
+    color: #CD06FF;
 }
