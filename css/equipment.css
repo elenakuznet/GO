@@ -2,7 +2,7 @@
     /* padding: 50px 0; */
 }
 
-.flex {
+.equipment__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -19,6 +19,8 @@
     height: 228px;
     padding-top: 166px;
     padding-left: 40px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
 }
 
 .equipment__item--vr {
@@ -60,4 +62,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     /* padding: 166px 40px 20px; */
+}
+
+.equipment__item:hover {
+    transform: scale(1.1);
+}
+
+.equipment__text {
+    white-space: pre-line;
 }

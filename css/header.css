@@ -26,27 +26,20 @@
     font-size: 22px;
     line-height: 50px;
     text-transform: uppercase;
+    background: transparent;
+    transition: color 0.3s ease-in;
 }
 
 .header__link:hover {
-    background: linear-gradient(99.05deg, #BC3CD8 0.07%, #C54B8C 106.32%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #bc3cd8;
 }
 
 .header__link:active {
-    background: #640AA3;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #640AA3;
 }
 
 .header__link:focus {
-    background: #CD06FF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #CD06FF;
 }
 
 .header__button {
@@ -61,6 +54,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     background: none;
+    transition: background 0.3s ease-in;
 }
 
 .header__button:hover {

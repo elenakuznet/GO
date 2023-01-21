@@ -4,10 +4,6 @@
 }
 
 .banner__wrapper {
-    /* background-image: url("../image/vr.png");
-    background-repeat: no-repeat;
-    background-position: right 35px bottom;
-    background-size: 675px; */
     min-height: 823px;
     position: relative;
 }
@@ -94,7 +90,8 @@
     text-transform: uppercase;
     color: #FFFFFF;
     position: relative;
-    background-color: #6C0287;
+    background: #6C0287;
+    transition: background 0.3s ease-in;
 }
 
 .banner__button::before {
@@ -121,7 +118,6 @@
 }
 
 .banner__arrow {
-    /* display: inline-block; */
     position: absolute;
     right: 544px;
     bottom: 90px;
@@ -130,15 +126,8 @@
     width: 97px;
     height: 97px; 
     outline: 1px solid transparent;
-    /* color: transparent; */
-    /* fill: #ffffff;
-    stroke: #ffffff; */
-    /* color: transparent;
-    stroke: #ffffff;
-    fill: #ffffff; */
-    /* margin: 0 auto; */
+    transition: background 0.3s ease-in;
 }
-
 
 .banner__arrow:hover {
     background-image: url("../image/banner/down-hover.svg");
