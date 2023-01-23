@@ -35,15 +35,15 @@
 }
 
 .header__link:active {
-    color: #640AA3;
+    color: var(--purple, #640aa3);
 }
 
 .header__link:focus {
-    color: #CD06FF;
+    color: var(--fuchsia, #cd06ff);
 }
 
 .header__button {
-    outline: 3px solid #CD06FF;
+    outline: 3px solid var(--fuchsia, #cd06ff);
     border-radius: 10px;
     border: 0;
     padding: 9px 29px 10px;
@@ -58,15 +58,15 @@
 }
 
 .header__button:hover {
-    background: #6C0287;
-    outline: 3px solid #6C0287;
+    background: var(--dark-fuchsia, #6c0287);;
+    outline: 3px solid var(--dark-fuchsia, #6c0287);;
 }
 
 .header__button:active {
-    background: #640AA3;
+    background: var(--purple, #640aa3);
     outline: 1px solid #000000;
 }
 
 .header__button:focus {
-    background: #6C0287;
+    background: var(--dark-fuchsia, #6c0287);
 }

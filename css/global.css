@@ -14,13 +14,12 @@ html {
 body {
     min-width: 320px;
     min-height: 100vh;
-
     font-family: Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
-    color: #fff;
-    background-color: #1b1a1b;
+    color: var(--white);
+    background-color: var(--main-background, #1b1a1b);
 }
 
 img, svg {
@@ -84,6 +83,6 @@ iframe {
     line-height: 1.25;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 40px;
 }

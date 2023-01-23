@@ -32,7 +32,7 @@
     line-height: 114%;
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white, #ffffff);
 }
 
 .halls__list {

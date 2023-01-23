@@ -1,5 +1,4 @@
 .contacts {
-    /* padding: 50px 0; */
     background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
@@ -43,17 +42,17 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 117%;
-    color: #ffffff;
+    color: var(--white, #ffffff);
     text-decoration: none;
     transition: color 0.3s ease-in;
 }
 
 .address__link:hover {
-    color: #EADEED;
+    color: var(--pale-pink, #eadeed);
 }
 
 .address__link:focus, .footer__link:active {
-    color: #CD06FF;
+    color: var(--fuchsia, #cd06ff);
 }
 
 .social {
@@ -72,22 +71,22 @@
 
 .social__link {
     display: block;
-    color: #ffffff;
+    color: var(--white, #ffffff);
     outline: 1px solid transparent;
-    transition: color 1s ease-in;
+    transition: color 0.3s ease-in;
 }
 
 .social__link:hover {
-    color: #EADEED;
+    color: var(--pale-pink, #eadeed);
 }
 
 .social__link:focus {
-    outline-color: #CD06FF;
-    color: #EADEED;
+    outline-color: var(--fuchsia, #cd06ff);
+    color: var(--pale-pink, #eadeed);
 }
 
 .social__link:active {
-    color: #CD06FF;
+    color: var(--fuchsia, #cd06ff);
 }
 
 .footer {
@@ -99,27 +98,27 @@
 }
 
 .footer__link {
-    color: #ffffff;
+    color:  var(--white, #ffffff);
     transition: color 0.3s ease-in;
 }
 
 .footer__link:hover {
-    color: #EADEED;  
+    color: var(--pale-pink, #eadeed);  
 }
 
 .footer__link:focus, .footer__link:active {
-    color: #CD06FF;
+    color: var(--fuchsia, #cd06ff);
 }
 
 .footer__mail {
-    color:#ffffff;
+    color: var(--white);
     transition: color 0.3s ease-in;
 }
 
 .footer__mail:hover {
-    color: #EADEED;
+    color: var(--pale-pink, #eadeed);
 }
 
 .footer__mail:focus, .footer__mail:active {
-    color: #CD06FF;
+    color: var(--fuchsia, #cd06ff);
 }
