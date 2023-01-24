@@ -11,6 +11,7 @@
 }
 
 .equipment__item {
+    display: inline-block;
     width: 380px;
     height: 228px;
     padding-top: 166px;
@@ -29,7 +30,10 @@
     background-image: url("../image/equipment/audio.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    transform: translateY(70px);
+    /* transform: translateY(70px); */
+    position: relative;
+    top: 70px;
+    left: 0;
     /* padding: 166px 40px 6px; */
 }
 
@@ -52,7 +56,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     padding: 166px 40px 6px;
-    transform: translateY(70px);
+    /* transform: translateY(70px); */
+    position: relative;
+    top: 70px;
+    left: 0;
 }
 
 .equipment__item--sony {
@@ -63,7 +70,7 @@
 }
 
 .equipment__item:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .equipment__text {
