@@ -36,6 +36,12 @@
 }
 
 .data {
+    /* display: grid;
+    grid-template-columns: 300px 280px 300px;
+    column-gap: 50px;
+    grid-template-areas: 
+    'one two three'
+    'four five six'; */
     margin-bottom: 40px;
     gap: 50px;
     justify-content: center;
@@ -66,8 +72,8 @@
 }
 
 .booking__hall {
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
     min-width: 250px;
 	padding: 7px 15px 8px;
 	line-height: 34px;
@@ -170,11 +176,33 @@
 }
 
 .booking__select {
+    grid-area: one;
     display: flex;
     justify-content: space-between;
     gap: 32px;
     margin-bottom: 22px;
 }
+
+/* .booking__name {
+    grid-area: two;
+}
+
+.booking__phone {
+    grid-area: three;
+}
+
+.booking__date {
+    grid-area: four;
+}
+
+
+.booking__family {
+    grid-area: five;
+}
+
+.booking__mail {
+    grid-area: six;
+} */
 
 /* .booking__date::after {
     content: "";
@@ -220,8 +248,8 @@
     border: 0;
     outline: 3px solid transparent;
     border-radius: 10px;
-    margin-bottom: 30px;
-    margin-left: 790px;
+    /* margin-bottom: 30px; */
+    /* margin-left: 790px; */
     transition: background 0.3s ease-in, outline-color 0.4s ease-in;
 }
 
@@ -285,4 +313,161 @@
 
 .input-name:focus {
     outline-color: var(--fuchsia, #cd06ff);
+}
+
+
+@media (max-width: 1024px) {
+    .booking {
+        padding: 60px 0;
+    }
+    .booking__title {
+        margin-bottom: 25px;
+    }
+    
+    .booking__row {
+        display: flex;
+        border: 0;
+        padding: 0;
+    }
+    
+    .booking__legend {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 26px;
+    }
+
+    .booking__hall {
+        min-width: 180px;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .choice {
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    
+    .entertainment {
+        padding-left: 40px;
+        justify-content: center;
+        gap: 100px;
+        margin-bottom: 60px;
+    }
+
+    .booking__equipment {
+        flex: 0 0 245px;
+    }
+    
+    .input {
+        outline: 2px solid transparent;
+        padding: 12px 17px 12px 17px;
+    }
+
+    .input-name {
+        border: 0;
+        outline: 2px solid transparent;
+        padding: 12px 16px 12px 16px;
+        outline: 2px solid transparent;
+    } 
+
+    /* .data {
+        grid-template-columns: 300px 254px 251px;
+    } */
+
+    .booking__column {
+        flex: 0;
+    }
+
+    .booking__button {
+        padding: 13px 45px;
+        font-size: 18px;
+        line-height: 24px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .booking {
+        padding: 60px 0;
+    }
+
+    .booking__title {
+        margin-bottom: 40px;
+    }
+    
+    .booking__row {
+        display: flex;
+        flex-wrap: wrap;
+        border: 0;
+        padding: 0;
+    }
+    
+    .booking__legend {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    .booking__hall {
+        min-width: 150px;
+        padding: 9px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    
+    .choice {
+        justify-content: space-between;
+        flex-basis: 250px;
+        margin-bottom: 50px;
+    }
+    
+    .entertainment {
+        padding-left: 40px;
+        justify-content: normal;
+        column-gap: 66px;
+        row-gap: 32px;
+        margin-bottom: 50px;
+    }
+
+
+    /* .data {
+        grid-template-columns: 280px 300px;
+        grid-template-areas: 
+        'one four'
+        'two three'
+        'five six';
+    } */
+
+    .booking__equipment {
+        flex: 0 0 245px;
+    }
+    
+    .input {
+        outline: 2px solid transparent;
+        padding: 12px 60px 12px 20px;
+    }
+
+    .input-name {
+        padding: 12px 40px 12px 20px;
+    }
+
+    .booking__column {
+        flex: 0;
+    }
+
+    .booking__column--first {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .booking__select {
+        gap: 14px;
+    }
 }

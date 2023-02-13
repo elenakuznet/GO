@@ -16,20 +16,19 @@
     height: 228px;
     padding-top: 166px;
     padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
     transition-duration: 0.5s;
     transition-timing-function: ease-in;
 }
 
 .equipment__item--vr {
     background-image: url("../image/equipment/vr.jpg");
-    background-repeat: no-repeat;
     /* padding: 166px 40px 34px; */
 }
 
 .equipment__item--audio {
     background-image: url("../image/equipment/audio.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
     /* transform: translateY(70px); */
     position: relative;
     top: 70px;
@@ -39,33 +38,29 @@
 
 .equipment__item--micro {
     background-image: url("../image/equipment/micro.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
     /* padding: 166px 40px 20px; */
 }
 
 .equipment__item--game {
     background-image: url("../image/equipment/game.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
     /* padding: 166px 40px 20px; */
 }
 
 .equipment__item--netflix {
     background-image: url("../image/equipment/netflix.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 166px 40px 6px;
+    /* padding: 166px 40px 6px; */
     /* transform: translateY(70px); */
     position: relative;
     top: 70px;
     left: 0;
 }
 
+/* .equipment__item--netflix:hover {
+    transform: scale(1.1) translateY(calc(100% - 70px));
+} */
+
 .equipment__item--sony {
     background-image: url("../image/equipment/sony.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
     /* padding: 166px 40px 20px; */
 }
 
@@ -75,4 +70,129 @@
 
 .equipment__text {
     white-space: pre-line;
+}
+
+@media (max-width: 1024px) {
+    .equipment__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px 20px;
+    }
+    
+    .equipment__title {
+        margin-bottom: 36px;
+    }
+    
+    .equipment__item {
+        display: inline-block;
+        width: 287px;
+        height: 172px;
+        padding-top: 114px;
+        padding-left: 20px;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+    }
+    
+    .equipment__item--audio {
+        background-image: url("../image/equipment/audio.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* transform: translateY(70px); */
+        position: relative;
+        top: 70px;
+        left: 0;
+        /* padding: 166px 40px 6px; */
+    }
+    
+    .equipment__item--netflix {
+        background-image: url("../image/equipment/netflix.jpg");
+        /* padding: 166px 40px 6px; */
+        /* transform: translateY(70px); */
+        position: relative;
+        top: 70px;
+        left: 0;
+    }
+    
+    .equipment__item:hover {
+        transform: scale(1.1); 
+    }
+    
+    .equipment__text {
+        white-space: pre-line;
+    }
+}
+
+@media (max-width: 768px) { 
+    .equipment__title {
+        margin-bottom: 30px;
+    }
+
+    .equipment__list {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .equipment__item {
+        display: inline-block;
+        width: 334px;
+        height: 200px;
+        padding-top: 132px;
+        padding-left: 30px;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+    }
+    
+    .equipment__item--audio {
+        background-image: url("../image/equipment/audio.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* transform: translateY(70px); */
+        position: static;
+        /* top: 70px;
+        left: 0; */
+        /* padding: 166px 40px 6px; */
+    }
+    
+    .equipment__item--netflix {
+        background-image: url("../image/equipment/netflix.jpg");
+        /* padding: 166px 40px 6px; */
+        /* transform: translateY(70px); */
+        position: static;
+        /* top: 70px;
+        left: 0; */
+    }
+    
+    .equipment__item--sony {
+        background-image: url("../image/equipment/sony.jpg");
+    }
+    
+    .equipment__text {
+        font-size: 20px;
+        line-height: 28px;
+        white-space: pre-line;
+    }
+}
+
+@media (max-width: 480px) {
+    .equipment__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .equipment__item {
+        display: inline-block;
+        width: 135px;
+        height: 75px;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    
+    .equipment__text {
+        font-size: 10px;
+        line-height: 14px;
+        white-space: pre-line;
+    }
 }

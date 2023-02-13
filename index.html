@@ -19,7 +19,11 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <img src="image/header/logo.png" alt="logo">
+                    <div class="header__burger">
+                        <img src="image/header/menu.svg" alt="">
+                    </div>
+                    <img class="header__logo" src="image/header/logo.svg" alt="logo">
+                     
                     <nav>
                         <ul class="header__list">
                             <li class="header__item"><a class="header__link" href="#rooms">Залы</a></li>
@@ -107,10 +111,14 @@
             <div class="container">
                 <h2 class="section__title halls__title">Наши залы</h2>
                 <ol class="halls__list">
-                    <li class="halls__item halls__item--vibes"><a class="halls__link" href="vibes.html" target="_blank">80's vibes</a></li>
-                    <li class="halls__item halls__item--starwars"><a class="halls__link" href="starwars.html" target="_blank">Star wars</a></li>
-                    <li class="halls__item halls__item--wildwest"><a class="halls__link" href="wildwest.html" target="_blank">Wild west</a></li>
-                    <li class="halls__item halls__item--neon"><a class="halls__link" href="neon.html" target="_blank">Neon style</a></li>
+                    <li class="halls__item halls__item--vibes"><a class="halls__link" href="pages/80-vibes/index.html" target="_blank">80’s
+                        vibes</a></li>
+                    <li class="halls__item halls__item--starwars"><a class="halls__link" href="pages/star-wars/index.html" target="_blank">Star
+                        wars</a></li>
+                    <li class="halls__item halls__item--wildwest"><a class="halls__link" href="pages/wild-west/index.html" target="_blank">wild
+                        west</a></li>
+                    <li class="halls__item halls__item--neon"><a class="halls__link" href="pages/neon/index.html" target="_blank">neon
+                        style</a></li>
                 </ol>
             </div>
         </section>
@@ -188,40 +196,40 @@
                                     <input class="booking__input booking__input--number" type="number" name="people" placeholder="Сколько человек" required>
                                 </label>
                             </div>
-                        <div class="booking__column">
-                                <label><span class="label">Имя</span> 
+                        <div class="booking__column name">
+                                <label class="booking__name"><span class="label">Имя</span> 
                                     <input class="input-name" type="text" name="name" required>
                                 </label>
-                                <label><span class="label">Фамилия</span> 
+                                <label class="booking__family"><span class="label">Фамилия</span> 
                                     <input class="input-name" type="text" name="family_name" required>
                                 </label>
                         </div>
-                        <div class="booking__column">
-                            <label><span class="label">Телефон</span>
+                        <div class="booking__column phone">
+                            <label class="booking__phone"><span class="label">Телефон</span>
                                 <input class="input" type="tel" name="tel" required>
                             </label>
-                            <label><span class="label">E-mail</span>
+                            <label class="booking__mail"><span class="label">E-mail</span>
                                 <input class="input" type="email" name="email" required>
                             </label>
+                            <button class="booking-row booking__button" type="submit">Забронировать</button>
                         </div>  
                     </fieldset> 
-                    <button class="booking-row booking__button" type="submit">Забронировать</button>
+                    
                 </form>
-            </div>
-            
+            </div>    
         </section>
         <section id="about" class="section about">
             <div class="container">
                 <h2 class="section__title about__title">О нас</h2>
-                <img class="about__image" src="image/about/about.jpg" alt="игровые возможности">
-                <div class="about__wrapper">
-                        <div class="about__text">
-                            <p class="about__description">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-                            <p class="about__description">Каждый день мы стараемся создавать 
+                <div class="about__box">
+                    <img class="about__image" src="image/about/about.jpg" alt="игровые возможности">
+                    <div class="about__text">
+                        <p class="about__description">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+                        <p class="about__description">Каждый день мы стараемся создавать 
                                 для вас самую лучшую игровую атмосферу 
                                 и радовать Вас топовыми игровыми разработками 
                                 со всего мира.</p>
-                        </div>
+                    </div>
                     
                     <blockquote class="quote">
                         <p class="quote__text">GAME OVER — 
@@ -245,7 +253,7 @@
                             <div class="review__box">
                                 <img class="review__image" src="image/review/maxim.jpg" alt="Макс Самойлов фото">
                             </div> 
-                            <figcaption>Макс Самойлов</figcaption>   
+                            <figcaption class="review__caption">Макс Самойлов</figcaption>   
                         </figure>
                         <div class="review__wrapper">
                             <p class="review__text">Отмечали здесь день рождения с компанией друзей, всё было очень круто!VR очки это просто бомба, никогда ещё я не был в таком полном игровом погружении.Сервис на высоте!</p>
@@ -354,7 +362,7 @@
                                 </li>
                             </ul>
                     </div>
-                    <img src="image/contacts/map.jpg" alt="карта местности">
+                    <img class="contact__image" src="image/contacts/map.jpg" alt="карта местности">
                 </div>
                 <!-- </nav>    -->
                     <div class="footer">
