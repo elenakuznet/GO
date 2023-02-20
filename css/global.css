@@ -89,6 +89,10 @@ iframe {
 
 
 @media (max-width: 1024px) {
+    .section {
+        padding: 35px 0;
+    }
+    
     .section__title {
         font-size: 30px;
         line-height: 40px;
@@ -100,6 +104,10 @@ iframe {
         font-size: 24px;
         line-height: 36px;
     }
+
+    .section {
+        padding: 30px 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -107,5 +115,9 @@ iframe {
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 15px;
+    }
+
+    .section {
+        padding: 15px 0;
     }
 }

@@ -4,8 +4,12 @@
 }
 
 .banner__wrapper {
-    min-height: 823px;
+    /* min-height: 823px; */
     position: relative;
+}
+
+.banner__content {
+    padding-bottom: 175px;
 }
 
 .banner__subtitle {
@@ -23,18 +27,30 @@
     letter-spacing: -0.1em;
     text-align: left;
     margin-bottom: 0;
-    position: relative;
+    /* position: relative; */
 }
 
-.banner__title::before {
-    content: "";
-    background: url("../image/banner/vr.png");
-    width: 675px;
-    height: 762px;
-    position: absolute;
+.banner__wrapper::after {
     display: block;
-    top: 61px;
-    left: 505px;
+    content: "";
+    background-image: url("../image/banner/vr.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 675px;
+    max-width: calc(675 / 1440 * 100vw);
+    /* max-width: 46vw; */
+    height: 762px;
+    max-height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* left: 43%;
+    top: 47%; */
+    /* display: block; */
+    /* top: 61px;
+    left: 505px; */
+    
 }
 
 .banner__row {
@@ -91,6 +107,7 @@
     position: relative;
     background: var(--dark-fuchsia, #6c0287);
     transition: background 0.3s ease-in;
+    /* margin-bottom: 154px; */
 }
 
 .banner__button::before {
@@ -117,9 +134,13 @@
 }
 
 .banner__arrow {
+    display: block;
+    margin: 0 auto;
+    z-index: 3;
     position: absolute;
-    right: 544px;
-    bottom: 90px;
+    /* right: 544px; */
+    right: 45%;
+    bottom: 10%;
     background-image: url("../image/banner/down.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,15 +163,48 @@
     background-image: url("../image/banner/down-active.svg");
 }
 
+@media (max-width: 1350px) {
+    .banner__content {
+        padding-bottom: 150px;
+    }
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
+    /* .banner__wrapper {
+        min-height: 723px;
+    } */
+    .banner__content {
+        padding-bottom: 135px;
+    }
+
+    /* .banner__wrapper::after{
+        content: "";
+        width: 675px;
+        max-width: calc(675 / 1200 * 100vw);
+        height: 100%;
+        position: absolute;
+    }  */
+
+    .banner__arrow {
+        bottom: 13%;
+        right: 45%;
+        width: 77px;
+        height: 77px; 
+    } 
+}
+
+@media (max-width: 1075px) {
     .banner {
-        /* padding: 146px 0 50px 0;  */
-        padding: 25px 0 41px 0;
+        padding: 15px 0 41px 0;
     }
     
     .banner__wrapper {
+        /* min-height: 583px; */
         white-space: nowrap;
+    }
+
+    .banner__content {
+        padding-bottom: 80px;
     }
     
     .banner__subtitle {
@@ -165,21 +219,16 @@
         line-height: 100%;
         margin-bottom: 20px;
     }
-    
-    .banner__title::before {
-        content: "";
-        background: url("../image/banner/vr.png");
-        background-position: center;
-        background-size: cover;
-        max-width: 453px;
-        max-height: 520px;
-        position: absolute;
-        top: 63px;
-        left: 451px;
+
+    .banner__wrapper::after {
+        /* max-width: calc(453 / 1065 * 100vw); */
+        max-width: 45vw;
+        /* width: 453px; */
+        height: 520px;
+        max-height: 100%;
     }
     
     .banner__row {
-        /* max-height: 209px;  */
         margin-bottom: 80px;
     }
     
@@ -205,36 +254,18 @@
         line-height: 30px;
     }
     
-    .banner__button::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        background: var(--dark-fuchsia, #6c0287);;
-        filter: blur(10px);
-        border-radius: 10px;
-    }
-    
-    .banner__button:hover, .banner__button:focus {
-        background: #840AA3;
-        border-radius: 10px;
-    }
-    
-    .banner__button:active {
-        background: var(--purple, #640aa3);
-        border-radius: 10px;
-    }
-    
     .banner__arrow {
-        position: absolute;
-        /* margin: 0 auto; */
-        bottom: 40px;
-        right: 419px;
+        bottom: 10%;
+        right: 45%;
         width: 67px;
         height: 67px; 
     } 
+}
+
+@media (max-width: 910px) {
+    .banner__content {
+        padding-bottom: 60px;
+    }
 }
 
 @media (max-width: 780px) {
@@ -242,14 +273,15 @@
         padding: 15px 0 40px 0;
     }
     
-    .banner__wrapper {
+    /* .banner__wrapper {
         min-height: 537px;
-    }
+    } */
     
     .banner__subtitle {
         font-size: 18px;
         line-height: 24px;
         padding-left: 60px;
+        margin-bottom: 50px;
     }
     
     .banner__title {
@@ -258,8 +290,16 @@
         white-space: nowrap;
         margin-bottom: 20px;
     }
+
+    .banner__wrapper::after {
+        width: 100%;
+        max-width: 53vw;
+        max-height: 100%;
+        /* width: 409px; */
+        height: 479px;
+    }
     
-    .banner__title::before {
+    /* .banner__title::before {
         content: "";
         background: url("../image/banner/vr.png");
         background-position: center;
@@ -269,7 +309,7 @@
         position: absolute;
         top: 58px;
         left: 276px;
-    }
+    } */
     
     .banner__row {
         gap: 30px;
@@ -292,21 +332,13 @@
     }
     
     .banner__button {
-        padding: 17px 48px;
-        border-radius: 10px;
+        padding: 11px 34px;
+        border-radius: 4px;
         font-size: 16px;
         line-height: 24px;
     }
     
     .banner__button::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        background: var(--dark-fuchsia, #6c0287);;
-        filter: blur(10px);
         border-radius: 4px;
     }
     
@@ -315,14 +347,41 @@
     } 
 }
 
+@media (max-width: 630px) {
+    .banner__title {
+        font-size: 69px;
+    }
+
+    .banner__wrapper::after {
+        width: 100%;
+        max-width: 44vw;
+        max-height: 100%;
+        width: 409px;
+        height: 479px;
+    }
+
+    .banner__subtitle {
+        margin-bottom: 20px;
+    }
+
+    .banner__row {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .banner__button {
+        padding: 8px 22px;
+    }
+}
+
 @media (max-width: 480px) {
     .banner {
         padding: 10px 0 23px 0;
     }
     
-    .banner__wrapper {
-        min-height: 204px;;
-    }
+    /* .banner__wrapper {
+        min-height: 204px;
+    } */
     
     .banner__subtitle {
         font-size: 10px;

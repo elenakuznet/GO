@@ -14,7 +14,7 @@
 
 .about__image {
     grid-area: one;
-    /* float: left; */
+    object-fit: cover;
     /* margin-right: 80px; */
 }
 

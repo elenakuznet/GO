@@ -25,6 +25,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 349px);
     gap: 20px;
+    justify-content: center;
 }
 
 .halls__title {
@@ -53,12 +54,9 @@
     }
 
     .halls__list {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 267px);
-        gap: 20px;
     }
-
 
     .halls__link {
         font-size: 50px;
@@ -76,10 +74,8 @@
     }
 
     .halls__list {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 200px);
-        gap: 20px;
     }
 
     .halls__link {

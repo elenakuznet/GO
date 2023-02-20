@@ -11,20 +11,26 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <img src="../../image/header/logo.png" alt="logo">
+                    <div class="header__burger">
+                        <svg width="54" height="29" viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="54" height="5" rx="2" fill=""/>
+                            <rect y="12" width="54" height="5" rx="2" fill=""/>
+                            <rect y="24" width="31" height="5" rx="2" fill=""/>
+                        </svg>
+                    </div>
+                    <a href="#"><img class="header__logo" src="../../image/header/logo.svg" alt="logo"></a>
                     <nav>
                         <ul class="header__list">
                             <li class="header__item"><a class="header__link" href="#rooms">Залы</a></li>
                             <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
                             <li class="header__item"><a class="header__link" href="#booking">Бронь</a></li>
                             <li class="header__item"><a class="header__link" href="#reviews">Отзывы</a></li>
-                            <!-- <li class="header__item"><a class="header__link" href="#question">Частые вопросы</a></li> -->
                             <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
                         </ul>
                     </nav>
                     <button class="header__button" type="button">Заказать звонок</button>
                 </div>
-                <a class="back" href="#"><img src="../../image/halls_style/Arrow 1.svg" alt=""> Вернуться назад</a>
+                <a class="back" href="../../index.html"><img src="../../image/halls_style/Arrow 1.svg" alt=""> Вернуться назад</a>
             </div>   
         </header>
     <main>
@@ -38,8 +44,9 @@
         </section>
         <section class="inside section">
             <div class="container">
-                <h2 class="inside__title">Что есть в комнате?</h2>
+                <h2 class="inside__title section__title">Что есть в комнате?</h2>
                 <div class="inside__wrapper">
+                    <img class="inside__image" src="../../image/rooms/wild-west.jpg" alt="">
                     <div class="inside__image inside__image--west"></div>
                     <p class="inside__text">В комнате присутствует большое количество элементов из любимых историй дикого запада. Револьверы, кожаные вещи, шляпы, сапоги и многое другое. 
                         Вы сможете воспользоваться динамическими игровыми платформами в виде лошадей, старинного поезда или дома в стиле вестерна. </p>
@@ -49,28 +56,26 @@
         </section>
         <section class="another section">   
             <div class="container">
-                <h2 class="another__title">Другие комнаты</h2>
+                <h2 class="another__title section__title">Другие комнаты</h2>
                 <ul class="another__list">
                     <li class="another__item  another__item--wars">
-                        <a class="another__link" href="">Star
+                        <a class="another__link" href="../star-wars/index.html">Star
                             wars</a>
                     </li>
 
                     <li class="another__item another__item--neon">
-                        <a class="another__link" href="">neon
+                        <a class="another__link" href="../neon/index.html">neon
                             style
                         </a>
                     </li>
 
                     <li class="another__item another__item--vibes">
-                        <a class="another__link" href="">80’s vibes
+                        <a class="another__link" href="../80-vibes/index.html">80’s vibes
                         </a>
                     </li>
 
                 </ul>
             </div>
-
-            
         </section>
     </main>
     <footer class="section contacts">
@@ -122,7 +127,7 @@
                             </li>
                         </ul>
                 </div>
-                <img src="../../image/contacts/map.jpg" alt="карта местности">
+                <img class="contacts__image" src="../../image/contacts/map.jpg" alt="карта местности">
             </div>
             <!-- </nav>    -->
                 <div class="footer">
