@@ -1,7 +1,6 @@
 .back {
-    padding: 60px 0 0 0;
+    padding: 35px 0 20px 0;
     display: block;
-    margin-bottom: 20px;
     font-weight: 700;
     font-size: 22px;
     line-height: 28px;
@@ -143,9 +142,7 @@
 
 @media (max-width: 1024px) {
     .back {
-        padding: 50px 0 0 0;
-        display: block;
-        margin-bottom: 20px;
+        padding: 35px 0 20px 0;
     }
     
     .heading__title {
@@ -200,11 +197,9 @@
 
 @media (max-width: 768px) {
     .back {
-        padding: 40px 0 0 0;
+        padding: 25px 0 20px 0;
         font-size: 16px;
         line-height: 28px;
-        display: block;
-        margin-bottom: 20px;
     }
     
     .heading__title {
@@ -277,10 +272,9 @@
 
 @media(max-width: 480px) {
     .back {
-        padding: 20px 0 0 0;
+        padding: 10px 0 15px 0;
         font-size: 12px;
         line-height: 16px;
-        margin-bottom: 15px;
     }
 
     .header__title {
