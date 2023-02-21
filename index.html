@@ -116,107 +116,110 @@
             </div>
         </section>
         <!-- Form 2 -->
-        <section id="booking" class="section booking">
-            <div class="container">
-                <h2 class="section__title booking__title">Забронировать зал просто</h2>
-                <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-                    <fieldset class="booking__row ">
-                        <legend class="booking__legend">Выбери зал</legend>
-                            <div class="choise">
-                                <input id="vibes" class="hall-input visually-hidden" type="radio" name="room" value="80's vibes">
-                                <label for="vibes" class="booking__hall">80's vibes</label>
-                                <input id="wars" class="hall-input visually-hidden" type="radio" name="room" value="Star wars">
-                                <label for="wars" class="booking__hall">Star wars</label>
-                                <input id="west" class="hall-input visually-hidden" type="radio" name="room" value="Wild west">
-                                <label for="west" class="booking__hall">Wild west</label>
-                                <input id="neon" class="hall-input visually-hidden" type="radio" name="room" value="Neon style">
-                                <label for="neon" class="booking__hall">Neon style</label>
-                            </div>      
-                    </fieldset>
-                    <fieldset class="booking__row ">
-                        <legend class="booking__legend">Собери набор развлечений</legend>
-                            <div class="entertainment">
-                                    <fieldset class="booking__equipment">
-                                    <legend class="legend">Приставка:</legend>
-                                    <label class="checkbox">
-                                        <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="PlayStation">PlayStation
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="Sega Mega Drive">Sega Mega Drive
-                                    </label>    
-                                        <label class="checkbox">
-                                            <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="X-box one S">X-box one S
-                                        </label>   
-                                    <label class="checkbox">
-                                        <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="Dendy">Dendy
-                                    </label>
+        <section id="booking" class="section ">
+            
+                <div class="booking">
+                    <div class="container">
+                        <h2 class="section__title booking__title">Забронировать зал просто</h2>
+                            <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                                <fieldset class="booking__row ">
+                                    <legend class="booking__legend">Выбери зал</legend>
+                                        <div class="choise">
+                                            <input id="vibes" class="hall-input visually-hidden" type="radio" name="room" value="80's vibes">
+                                            <label for="vibes" class="booking__hall">80's vibes</label>
+                                            <input id="wars" class="hall-input visually-hidden" type="radio" name="room" value="Star wars">
+                                            <label for="wars" class="booking__hall">Star wars</label>
+                                            <input id="west" class="hall-input visually-hidden" type="radio" name="room" value="Wild west">
+                                            <label for="west" class="booking__hall">Wild west</label>
+                                            <input id="neon" class="hall-input visually-hidden" type="radio" name="room" value="Neon style">
+                                            <label for="neon" class="booking__hall">Neon style</label>
+                                        </div>      
                                 </fieldset>
-                                <fieldset class="booking__equipment">
-                                    <legend class="legend">Настольные игры</legend>
-                                        <label class="checkbox">
-                                            <input  class="checkbox__input" type="checkbox" name="table_game" value="Jenga">Jenga
-                                        </label>
-                                        <label class="checkbox">
-                                            <input class="checkbox__input" type="checkbox" name="table_game" value="Monopoly">Monopoly
-                                        </label>
-                                        <label class="checkbox">
-                                            <input class="checkbox__input" type="checkbox" name="table_game" value="Манчкин">Манчкин
-                                        </label>
-                                        <label class="checkbox">
-                                            <input class="checkbox__input" type="checkbox" name="table_game" value="Alias">Alias
-                                        </label>   
+                                <fieldset class="booking__row ">
+                                    <legend class="booking__legend">Собери набор развлечений</legend>
+                                        <div class="entertainment">
+                                                <fieldset class="booking__equipment">
+                                                <legend class="legend">Приставка:</legend>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="PlayStation">PlayStation
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="Sega Mega Drive">Sega Mega Drive
+                                                </label>    
+                                                    <label class="checkbox">
+                                                        <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="X-box one S">X-box one S
+                                                    </label>   
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input checkbox__input--round" type="radio" name="game_console" value="Dendy">Dendy
+                                                </label>
+                                            </fieldset>
+                                            <fieldset class="booking__equipment">
+                                                <legend class="legend">Настольные игры</legend>
+                                                    <label class="checkbox">
+                                                        <input  class="checkbox__input" type="checkbox" name="table_game" value="Jenga">Jenga
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <input class="checkbox__input" type="checkbox" name="table_game" value="Monopoly">Monopoly
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <input class="checkbox__input" type="checkbox" name="table_game" value="Манчкин">Манчкин
+                                                    </label>
+                                                    <label class="checkbox">
+                                                        <input class="checkbox__input" type="checkbox" name="table_game" value="Alias">Alias
+                                                    </label>   
+                                            </fieldset>
+                                            <fieldset class="booking__equipment">
+                                                <legend class="legend">Дополнительно</legend>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="extra" value="caraoke">
+                                                    Караоке
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input class="checkbox__input" type="checkbox" name="extra" value="vr">
+                                                VR</label>
+                                            </fieldset>
+                                        </div> 
                                 </fieldset>
-                                <fieldset class="booking__equipment">
-                                    <legend class="legend">Дополнительно</legend>
-                                    <label class="checkbox">
-                                        <input class="checkbox__input" type="checkbox" name="extra" value="caraoke">
-                                        Караоке
-                                    </label>
-                                    <label class="checkbox">
-                                        <input class="checkbox__input" type="checkbox" name="extra" value="vr">
-                                    VR</label>
-                                </fieldset>
-                            </div> 
-                    </fieldset>
-                    <fieldset class="booking__row ">
-                        <legend class="booking__legend">Выбери дату и время</legend>
-                            <div class="data">
-                                        <div class="booking__column booking__column--first">
-                                        <div class="booking__select">
-                                            <label class="booking__date"> 
-                                                <input class="booking__input" type="date" name="date" required>
-                                            </label>
-                                            <label class="booking__date">
-                                                <input class="booking__input" type="time" name="time" required>
-                                            </label>
+                                <fieldset class="booking__row ">
+                                    <legend class="booking__legend">Выбери дату и время</legend>
+                                        <div class="data">
+                                                    <div class="booking__column booking__column--first">
+                                                    <div class="booking__select">
+                                                        <label class="booking__date"> 
+                                                            <input class="booking__input" type="date" name="date" required>
+                                                        </label>
+                                                        <label class="booking__date">
+                                                            <input class="booking__input" type="time" name="time" required>
+                                                        </label>
+                                                    </div>
+                                                    <label class="booking__number">
+                                                        <input class="input" type="number" name="people" placeholder="Сколько человек" required>
+                                                    </label>
+                                                </div>
+                                            <div class="booking__column name">
+                                                    <label class="booking__name"><span class="label">Имя</span> 
+                                                        <input class="input" type="text" name="name" required>
+                                                    </label>
+                                                    <label class="booking__family"><span class="label">Фамилия</span> 
+                                                        <input class="input" type="text" name="family_name" required>
+                                                    </label>
+                                            </div>
+                                            <div class="booking__column phone">
+                                                <label class="booking__phone"><span class="label">Телефон</span>
+                                                    <input class="input" type="tel" name="tel" required>
+                                                </label>
+                                                <label class="booking__mail"><span class="label">E-mail</span>
+                                                    <input class="input" type="email" name="email" required>
+                                                </label>
+                                                <button class="booking-row booking__button" type="submit">Забронировать</button>
+                                            </div>  
                                         </div>
-                                        <label class="booking__number">
-                                            <input class="input" type="number" name="people" placeholder="Сколько человек" required>
-                                        </label>
-                                    </div>
-                                <div class="booking__column name">
-                                        <label class="booking__name"><span class="label">Имя</span> 
-                                            <input class="input" type="text" name="name" required>
-                                        </label>
-                                        <label class="booking__family"><span class="label">Фамилия</span> 
-                                            <input class="input" type="text" name="family_name" required>
-                                        </label>
-                                </div>
-                                <div class="booking__column phone">
-                                    <label class="booking__phone"><span class="label">Телефон</span>
-                                        <input class="input" type="tel" name="tel" required>
-                                    </label>
-                                    <label class="booking__mail"><span class="label">E-mail</span>
-                                        <input class="input" type="email" name="email" required>
-                                    </label>
-                                    <button class="booking-row booking__button" type="submit">Забронировать</button>
-                                </div>  
-                            </div>
-                            
-                    </fieldset> 
-                    
-                </form>
-            </div>    
+                                        
+                                </fieldset> 
+                                
+                            </form>
+                        </div> 
+                </div>
         </section>
         <section id="about" class="section about">
             <div class="container">

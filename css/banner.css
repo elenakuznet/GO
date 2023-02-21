@@ -389,6 +389,10 @@
         padding-left: 20px;
         margin-bottom: 10px;
     }
+
+    .banner__content {
+        padding-bottom: 23px;
+    }
     
     .banner__title {
         font-size: 35px;
