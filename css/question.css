@@ -15,7 +15,8 @@
     padding: 30px 70px;
     margin-bottom: 20px;
     /* line-height: 46px; */
-    list-style: none;   
+    list-style: none;  
+    cursor: pointer;
 }
 
 .question__item:last-child {
@@ -41,7 +42,7 @@
     height: 100%;
     height: 46px;
     background-size: contain;
-    cursor: pointer;
+    
 }
 
 .question__item:nth-of-type(odd)::after {

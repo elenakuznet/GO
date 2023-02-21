@@ -111,6 +111,7 @@
     font-size: 22px;
     line-height: 25px;
     padding-left: 40px;
+    cursor: pointer;
 }
 
 .checkbox__input {
