@@ -59,7 +59,7 @@
     border: 0;
     gap: 20px;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .booking__column {
@@ -106,25 +106,18 @@
 
 .checkbox {
     position: relative;
-    display: flex;
-    align-items: center;
     font-size: 22px;
     line-height: 25px;
-    padding-left: 40px;
     cursor: pointer;
 }
 
 .checkbox__input {
-    position: absolute;
-    /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; */
-    /* margin-left: -40px; */
+    position: relative;
     width: 20px;
     height: 20px;
     margin: 2.5px 15px 2.5px 2.5px;
-    margin-left: -37px;
     cursor: pointer;
+    vertical-align: bottom;
 }
 
 .checkbox__input:before {
@@ -409,19 +402,15 @@
 
     .checkbox {
         position: relative;
-        display: flex;
-        align-items: center;
         font-size: 22px;
         line-height: 40px;
-        padding-left: 50px;
     }
     
     .checkbox__input {
-        position: absolute;
+        position: relative;
         width: 30px;
         height: 30px;
         margin: 2.5px 15px 2.5px 2.5px;
-        margin-left: -47px;
     }
 
     .checkbox__input:before {
@@ -551,19 +540,15 @@
 
     .checkbox {
         position: relative;
-        display: flex;
-        align-items: center;
         font-size: 16px;
         line-height: 30px;
-        padding-left: 50px;
     }
     
     .checkbox__input {
-        position: absolute;
+        position: relative;
         width: 20px;
         height: 20px;
-        margin: 2.5px 15px 2.5px 2.5px;
-        margin-left: -47px;
+        margin: 2.5px 14.5px 2.5px 2.5px;
     }
 
     .checkbox__input:before {
