@@ -14,6 +14,8 @@
     <title>GAME OVER</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <script defer src="js/jquery-3.6.3.min.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
         <header class="header">
@@ -405,12 +407,27 @@
             </form>
         </div>  -->
     <!-- </div> -->
+    <div class="modal">
+        <div class="modal__main">
+            <form class="modal__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <legend class="modal__legend">Заказать звонок</legend>
+                <label class="booking__name"><span class="label">Имя</span> 
+                    <input class="input" type="text" name="name" required>
+                </label>
+                <label class="booking__phone"><span class="label">Телефон</span>
+                    <input class="input" type="tel" name="tel" required>
+                </label>
+                <button class="booking__button" type="submit">Забронировать</button>
+            </form>
+            <button class="modal__close"><img src="image/close.svg" alt=""></button>
+        </div>
+    </div>
     <script>
     document.addEventListener('click', event => {
     if (event.target.matches('button')) {
         event.target.focus()
     }
-})
+    });
     </script>
 </body>
 </html>
