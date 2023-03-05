@@ -93,3 +93,51 @@ $('.header__menu').click(function(event){
 // closeMenu.on('click', function(){
 //     $('.header__overlay').hide();
 // })
+
+
+$('.acc__item').accordion({
+    active: true,
+    collapsible: true,
+    heightStyle: 'content',
+    icons: {
+        header: 'acc__accord',
+        activeHeader: 'acc__accord, acc__accord--active',
+        hoverHeader: 'acc__accord--hover',
+    }
+});
+
+$('.acc__item--even').accordion({
+    active: true,
+    collapsible: true,
+    heightStyle: 'content',
+    icons: {
+        header: 'acc__even',
+        activeHeader: 'acc__even--active',
+        hoverHeader: 'acc__even--hover',
+    }
+});
+
+
+ymaps.ready(init);
+        function init(){
+            const myMap = new ymaps.Map("map", {
+                center: [55.716198, 37.595659],
+                zoom: 17
+            });
+
+            const mark = new ymaps.Placemark([55.716198, 37.595659], {
+                hintContent: 'GAME OVER - игровое пространство',
+            }, {
+                iconLayout: 'default#image'
+            });
+            myMap.geoObjects.add(mark);
+
+            myMap.behaviors.disable('drag');
+
+            myMap.controls.remove('geolocationControl');
+            myMap.controls.remove('searchControl');
+            myMap.controls.remove('trafficControl');
+            myMap.controls.remove('typeSelector');
+            // myMap.controls.remove('fullscreenControl');
+            // myMap.controls.remove('zoomControl');
+        }
