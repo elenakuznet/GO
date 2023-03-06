@@ -23,16 +23,19 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
-                    <div class="header__burger">
-                        <svg width="54" height="29" viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="54" height="5" rx="2" fill=""/>
-                            <rect y="12" width="54" height="5" rx="2" fill=""/>
-                            <rect y="24" width="31" height="5" rx="2" fill=""/>
-                        </svg>
+                    <div class="button__wrapper">
+                        <button class="header__burger">
+                            <svg width="54" height="29" viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="54" height="5" rx="2" fill=""/>
+                                <rect y="12" width="54" height="5" rx="2" fill=""/>
+                                <rect y="24" width="31" height="5" rx="2" fill=""/>
+                            </svg>
+                        </button>
+                        <button class="header__close"><img src="image/header/close_header.svg" alt=""></button>
                     </div>
-                    <button class="header__close"><img src="image/header/close_header.svg" alt=""></button>
+                    
                     <a href="#"><img class="header__logo" src="image/header/logo.svg" alt="logo"></a>
-                
+                    <div>
                         <nav class="header__menu">
                             <ul class="header__list">
                                 <li class="header__item"><a class="header__link" href="#rooms">Залы</a></li>
@@ -40,12 +43,14 @@
                                 <li class="header__item"><a class="header__link" href="#booking">Бронь</a></li>
                                 <li class="header__item"><a class="header__link" href="#reviews">Отзывы</a></li>
                                 <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
+                                <li class="header__item"><button class="header__button header__button--nav" type="button">Заказать звонок</button></li>
                             </ul>
                             
                         </nav>
-
-                    
+                    </div>
+                        
                     <button class="header__button" type="button">Заказать звонок</button>
+                        
                 </div>
             </div>   
         </header>
@@ -69,7 +74,7 @@
                                     аппаратура</p>
                             </div>
                         </div>
-                        <button class="banner__button" type="button">Забронировать</button>
+                        <a href="#booking" class="banner__button" type="button">Забронировать</a>
                     </div>
                     
                     <a class="banner__arrow" href="#equipment"></a>
@@ -400,7 +405,7 @@
                                 </li>
                             </ul>
                     </div>
-                    <div id="map" style="width: 600px; height: 400px"></div>
+                    <div id="map" class="map"></div>
                     <!-- <img class="contacts__image" src="image/contacts/map.jpg" alt="карта местности"> -->
                 </div>
                 <!-- </nav>    -->

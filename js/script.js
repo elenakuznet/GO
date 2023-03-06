@@ -41,38 +41,51 @@ $('.modal__form').submit(function(event) {
         data: $(this).serialize(),
         success(data) {
             title.text('Спасибо ваша заявка принята!')
-            $('.modal__form').slideUp(300);
+            $('.modal__form').slideUp(300); 
         },
         error() {
             title.text('Что то пошло не так, попробуйте позже!')
         }
-    })
+    })  
 });
+
+
+// $('.modal__form').trigger('reset');
 
 
 // Бургер
 
+
 const burgerBtn = $('.header__burger');
 const closeMenu = $('.header__close');
+const overlay = $('.header__menu').parent();
 
 
-burgerBtn.click(function(){
+burgerBtn.click(function() {
+    overlay.addClass('overlay');
     $('.header__menu').show(300);
-    burgerBtn.hide(300);
-    closeMenu.show(300);
+    burgerBtn.hide();
+    closeMenu.show();
 });
 
 closeMenu.click(function(){
+    overlay.removeClass('overlay');
     $('.header__menu').hide(300);
-    burgerBtn.show(300);
-    closeMenu.hide(300);
+    closeMenu.hide();
+    burgerBtn.show();
 })
 
-$('.header__menu').click(function(event){
+overlay.click(function(event){
     if(event.target == this) {
+        overlay.hide(300);
         $('.header__menu').hide(300);
+        closeMenu.hide();
+        burgerBtn.show(); 
     }
 });
+
+
+
 
 
 // $('.header__overlay').click(function(event){

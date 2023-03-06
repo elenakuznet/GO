@@ -104,7 +104,7 @@
     align-items: flex-end;
 }
 
-.contacts__image {
+.map {
     height: auto;
     width: 100%;
     max-width: 680px;
@@ -163,7 +163,7 @@
         margin-right: 13px;
     }
     
-    .contacts__image {
+    .map {
         max-width: 542px;
     }
     
@@ -175,7 +175,7 @@
 }
 
 @media (max-width: 945px) {
-    .contacts__image {
+    .map {
         max-width: 450px;
     }
 }
@@ -230,7 +230,7 @@
         float: left;
     } 
 
-    .contacts__image {
+    .map {
         max-width: 688px;
     }
 }

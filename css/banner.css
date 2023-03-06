@@ -38,19 +38,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 675px;
-    max-width: calc(675 / 1440 * 100vw);
-    /* max-width: 46vw; */
+    /* max-width: calc(675 / 1440 * 100vw); */
+    max-width: 50vw;
     height: 762px;
     max-height: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
-    /* left: 43%;
-    top: 47%; */
-    /* display: block; */
-    /* top: 61px;
-    left: 505px; */
-    
 }
 
 .banner__row {
@@ -140,7 +134,7 @@
     position: absolute;
     right: 50%;
     transform: translateX(50%);
-    bottom: 10%;
+    bottom: 12%;
     background-image: url("../image/banner/down.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -170,9 +164,6 @@
 }
 
 @media (max-width: 1200px) {
-    /* .banner__wrapper {
-        min-height: 723px;
-    } */
     .banner__content {
         padding-bottom: 135px;
     }
@@ -220,7 +211,7 @@
 
     .banner__wrapper::after {
         /* max-width: calc(453 / 1065 * 100vw); */
-        max-width: 45vw;
+        /* max-width: 50vw; */
         /* width: 453px; */
         height: 520px;
         max-height: 100%;
@@ -294,18 +285,6 @@
         /* width: 409px; */
         height: 479px;
     }
-    
-    /* .banner__title::before {
-        content: "";
-        background: url("../image/banner/vr.png");
-        background-position: center;
-        background-size: cover;
-        max-width: 409px;
-        max-height: 479px;
-        position: absolute;
-        top: 58px;
-        left: 276px;
-    } */
     
     .banner__row {
         gap: 30px;
