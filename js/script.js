@@ -58,36 +58,37 @@ $('.modal__form').submit(function(event) {
 
 const burgerBtn = $('.header__burger');
 const closeMenu = $('.header__close');
-// const overlay = $('.header__menu').parent();
+// // const overlay = $('.header__menu').parent();
 
 
 burgerBtn.click(function() {
-    $('.modal').show();
-    $('.modal__main').hide();
-    // overlay.addClass('modal');
+    // $('.modal').show();
+    // $('.modal__main').hide();
+//     // overlay.addClass('modal');
     $('.header__menu').show(300);
     burgerBtn.hide();
     closeMenu.show();
 });
 
-closeMenu.click(function(){
-    $('.modal').hide();
-    $('.modal__main').hide();
+closeMenu.click(function() {
+//     $('.modal').hide();
+//     $('.modal__main').hide();
 
-    // overlay.removeClass('modal');
+//     // overlay.removeClass('modal');
     $('.header__menu').hide(300);
     closeMenu.hide();
     burgerBtn.show();
 })
 
-modal.click(function(event){
-    if(event.target == this) {
-        $('.header__menu').hide(300);
-        modal.hide(300);
-        closeMenu.hide();
-        burgerBtn.show(); 
-    }
-});
+// modal.click(function(event){
+//     if(event.target == this) {
+//         $('.header__menu').hide(300);
+//         modal.hide(300);
+//         closeMenu.hide();
+//         burgerBtn.show(); 
+//     }
+// });
+
 
 
 
