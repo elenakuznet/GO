@@ -12,6 +12,9 @@ const menu = $('.header__menu');
 const menuBox = $('.header__box');
 // const menuBtn = $('.header__button--mobile');
 const menuLink = $('.header__link');
+const burgerBtn = $('.header__burger');
+const closeMenu = $('.header__close');
+
 
 
 function closeModal() {
@@ -72,9 +75,6 @@ modalForm.submit(function(event) {
 // Бургер
 
 
-const burgerBtn = $('.header__burger');
-const closeMenu = $('.header__close');
-
 function closeNav() {
     menu.hide(100, function() {
         menuBox.slideUp(200, function() {
@@ -106,16 +106,6 @@ burgerBtn.click(function() {
 
 closeMenu.click(closeNav);
 
-// closeMenu.click(function() {
-//     menu.hide(100, function() {
-//         menuBox.slideUp(200, function() {
-//             menuOverlay.fadeOut(100);
-//             closeMenu.fadeOut(100, function() {
-//                 burgerBtn.fadeIn(100);
-//             })
-//         });
-//     });
-// });
 
 
 menuOverlay.click(function(event){
@@ -126,16 +116,29 @@ menuOverlay.click(function(event){
 
 
 
+
+// $('.acc__button').hover(
+//     function() {
+//         $('.acc__accord').addClass("acc__accord--hover");
+//     }, function() {
+//         $('.acc__accord' ).removeClass( "acc__accord--hover" );
+//     }
+// );
+
+
+
+
 $('.acc__item').accordion({
     active: true,
     collapsible: true,
     heightStyle: 'content',
     icons: {
         header: 'acc__accord',
-        activeHeader: 'acc__accord, acc__accord--active',
-        hoverHeader: 'acc__accord--hover',
-    }
+        activeHeader: 'acc__accord, acc__accord--active',  
+    },
 });
+
+
 
 $('.acc__item--even').accordion({
     active: true,
@@ -144,8 +147,7 @@ $('.acc__item--even').accordion({
     icons: {
         header: 'acc__even',
         activeHeader: 'acc__even--active',
-        hoverHeader: 'acc__even--hover',
-    }
+    },
 });
 
 

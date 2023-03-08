@@ -43,6 +43,12 @@
     height: 100%;
     }
 
+/* .acc__button:hover {
+    
+    background-image: url('../image/question/hover.svg'); 
+    
+} */
+
 .acc__accord {
     display: block;
     background-image: url('../image/question/open-white.svg');
@@ -68,9 +74,24 @@
 .acc__accord--hover {
     display: block;
     background-image: url('../image/question/hover.svg'); 
+    background-size: contain;
     width: 46px;
     height: 46px;
 }
+
+.acc__accord:hover {
+    display: block;
+    background-image: url('../image/question/hover.svg'); 
+    width: 46px;
+    height: 46px;
+    transition: background 0.4s ease-in;
+}
+
+.acc__accord:active {
+    background-image: url("../image/question/close.svg");
+    transition: background 0.4s ease-in;
+}
+
 
 .acc__even {
     display: block;
@@ -99,6 +120,19 @@
     background-image: url('../image/question/open2.svg'); 
     width: 46px;
     height: 46px;
+}
+
+.acc__even:hover {
+    display: block;
+    background-image: url('../image/question/open2.svg'); 
+    width: 46px;
+    height: 46px;
+    transition: background 0.4s ease-in;
+}
+
+.acc__even:active {
+    background-image: url("../image/question/close2.svg");
+    transition: background 0.4s ease-in;
 }
 
 .acc__text {
@@ -191,6 +225,14 @@
 
     .acc__even {
         background-image: url("../image/question/open-white.svg");
+    }
+
+    .acc__even:hover {
+        background-image: url("../image/question/hover.svg");
+    }
+
+    .acc__even:active {
+        background-image: url("../image/question/close.svg");
     }
 
     .acc__even--active {
