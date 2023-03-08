@@ -117,6 +117,8 @@ menuOverlay.click(function(event){
 
 
 
+// Аккордион
+
 // $('.acc__button').hover(
 //     function() {
 //         $('.acc__accord').addClass("acc__accord--hover");
@@ -124,7 +126,6 @@ menuOverlay.click(function(event){
 //         $('.acc__accord' ).removeClass( "acc__accord--hover" );
 //     }
 // );
-
 
 
 
@@ -139,17 +140,18 @@ $('.acc__item').accordion({
 });
 
 
-
 $('.acc__item--even').accordion({
     active: true,
     collapsible: true,
     heightStyle: 'content',
     icons: {
         header: 'acc__even',
-        activeHeader: 'acc__even--active',
+        activeHeader: 'acc__even, acc__even--active',
     },
 });
 
+
+// Карта
 
 ymaps.ready(init);
         function init(){
