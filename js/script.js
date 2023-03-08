@@ -1,56 +1,72 @@
+const modal = $('.modal');
+const modalMain = $('.modal__main');
+
 const openBtn = $('.header__button');
 const closeBtn = $('.modal__close');
-const title = $('.modal__title');
+
+const modalForm = $('.modal__form');
+const modalTitle = $('.modal__title');
+
+const menuOverlay = $('.header__overlay');
+const menu = $('.header__menu');
+const menuBox = $('.header__box');
+// const menuBtn = $('.header__button--mobile');
+const menuLink = $('.header__link');
 
 
+function closeModal() {
+    modalMain.hide(200, function() {
+        modal.fadeOut(100, function() {
+            modalForm.slideDown();
+            modalTitle.text('Заказать звонок')
+        });
+    });
+}
 // открыть по кнопке
 
 openBtn.click(function() {
-    $('.modal').show(300);
+    modal.fadeIn(100, function() {
+        modalMain.show(200);
+    });
 });
 
 
 // закрыть по клику на крестик
 
-closeBtn.click(function() {
-    $('.modal').hide(300);
-});
+closeBtn.click(closeModal);
 
 
 //закрыть по клику мимо
 
 $('.modal').click(function(event){
-    if(event.target == this) {
-        $('.modal').hide(300);
+    if(event.target === this) {
+        closeModal();
     }
 });
 
-// $(document).click(function (event) {
-//     if ($(event.target).is('.modal')) {
-//         $('.modal').hide(300);;
-//     }
-// });
 
 //отослать форму
 
-$('.modal__form').submit(function(event) {
+modalForm.submit(function(event) {
     event.preventDefault();
     $.ajax({
         url: 'https://jsonplaceholder.typicode.com/posts',
         type: 'POST',
         data: $(this).serialize(),
         success(data) {
-            title.text('Спасибо ваша заявка принята!')
-            $('.modal__form').slideUp(300); 
+            const [{name, tel}] = modalForm;
+            console.log(data);
+            modalTitle.text('Спасибо ваша заявка принята!')
+            modalForm.slideUp(300, function() {
+                name.value = '';
+                tel.value = '';
+            }); 
         },
         error() {
-            title.text('Что то пошло не так, попробуйте позже!')
+            modalTitle.text('Что то пошло не так, попробуйте позже!')
         }
     })  
 });
-
-
-// $('.modal__form').trigger('reset');
 
 
 // Бургер
@@ -58,59 +74,56 @@ $('.modal__form').submit(function(event) {
 
 const burgerBtn = $('.header__burger');
 const closeMenu = $('.header__close');
-// // const overlay = $('.header__menu').parent();
 
+function closeNav() {
+    menu.hide(100, function() {
+        menuBox.slideUp(200, function() {
+            menuOverlay.fadeOut(100);
+            closeMenu.fadeOut(100, function() {
+                burgerBtn.fadeIn(100);
+            })
+        });
+    });
+}
 
 burgerBtn.click(function() {
-    // $('.modal').show();
-    // $('.modal__main').hide();
-//     // overlay.addClass('modal');
-    $('.header__menu').show(300);
-    burgerBtn.hide();
-    closeMenu.show();
+    menuOverlay.fadeIn(100, function() {
+        menuBox.slideDown(200, function() {
+            menu.show(100, function() {
+                burgerBtn.fadeOut(100, function() {
+                    closeMenu.fadeIn(100);
+                })
+            });
+            openBtn.click(function() {
+                closeNav();
+            });
+            menuLink.click(function() {
+                closeNav();
+            })
+        });
+    });
 });
 
-closeMenu.click(function() {
-//     $('.modal').hide();
-//     $('.modal__main').hide();
+closeMenu.click(closeNav);
 
-//     // overlay.removeClass('modal');
-    $('.header__menu').hide(300);
-    closeMenu.hide();
-    burgerBtn.show();
-})
-
-// modal.click(function(event){
-//     if(event.target == this) {
-//         $('.header__menu').hide(300);
-//         modal.hide(300);
-//         closeMenu.hide();
-//         burgerBtn.show(); 
-//     }
+// closeMenu.click(function() {
+//     menu.hide(100, function() {
+//         menuBox.slideUp(200, function() {
+//             menuOverlay.fadeOut(100);
+//             closeMenu.fadeOut(100, function() {
+//                 burgerBtn.fadeIn(100);
+//             })
+//         });
+//     });
 // });
 
 
+menuOverlay.click(function(event){
+    if(event.target === this) {
+        closeNav();
+    }
+});
 
-
-
-// $('.header__overlay').click(function(event){
-//     if(event.target == this) {
-//         $('.header__overlay').hide(300);
-//     }
-// });
-
-
-
-// $('.header__burger').on('click', function() {
-//     $('.header__overlay').show(300);
-//     $('.header__close').animate({
-//         opasity: 1,
-//     }, 300, 'swing');
-// });
-
-// closeMenu.on('click', function(){
-//     $('.header__overlay').hide();
-// })
 
 
 $('.acc__item').accordion({

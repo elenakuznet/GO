@@ -54,7 +54,7 @@
 
 @media (max-width: 580px) {
     .modal {
-        padding: 20px;
+        padding: 100px 0 0 0;
     }
     .modal__main {
         padding: 60px 30px 80px 30px;
