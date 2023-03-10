@@ -184,7 +184,7 @@ ymaps.ready(init);
 new AirDatepicker('#airdatepicker', {
         // isMobile: true,
         autoClose: true,
-        inline: true,
+        // inline: true,
 });
 
 
