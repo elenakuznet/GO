@@ -14,9 +14,16 @@
     <title>GAME OVER</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="airdatepicker/air-datepicker.css">
+    <link rel="stylesheet" href="timepicker/jquery.timepicker.css">
+    <link rel="stylesheet" href="timepicker/jquery.timepicker.min.css">
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=f4112ee9-ccf1-46a4-aaa2-b243dc478c03&lang=ru_RU" type="text/javascript"></script>
     <script defer src="js/jquery-3.6.3.min.js"></script>
     <script defer src="js/jquery-ui.min.js"></script>
+    <script defer src="airdatepicker/air-datepicker.js"></script>
+    <script defer src="timepicker/jquery.timepicker.js"></script>
+    <script defer src="timepicker/jquery.timepicker.min.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -199,10 +206,12 @@
                                                     <div class="booking__column booking__column--first">
                                                     <div class="booking__select">
                                                         <label class="booking__date"> 
-                                                            <input class="booking__input" type="date" name="date" required>
+                                                            <input class="booking__input" placeholder="Дата" name="date" id="airdatepicker" required>
+                                                            <button class="booking__arrow"></button>
                                                         </label>
                                                         <label class="booking__date">
-                                                            <input class="booking__input" type="time" name="time" required>
+                                                            <input class="booking__input" placeholder="Время" type="text" name="time" id="timepicker" required>
+                                                            <button class="booking__arrow"></button>
                                                         </label>
                                                     </div>
                                                     <label class="booking__number">

@@ -176,3 +176,26 @@ ymaps.ready(init);
             // myMap.controls.remove('fullscreenControl');
             // myMap.controls.remove('zoomControl');
         }
+
+
+// Календарь
+
+
+new AirDatepicker('#airdatepicker', {
+        // isMobile: true,
+        autoClose: true,
+        inline: true,
+});
+
+
+// Часы
+
+$(document).ready(function(){
+    $('#timepicker').timepicker({
+        timeFormat: 'HH:mm',
+        interval: 90,
+        startTime: '10:00',
+        minTime: '10',
+        maxTime: '17:30',
+    });
+});
