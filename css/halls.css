@@ -1,5 +1,6 @@
 .halls {
-    padding: 50px 0;
+    /* padding: 50px 0; */
+    padding: 50px 0 100px 0;
 }
 
 .halls__item {
@@ -50,7 +51,7 @@
 
 @media (max-width: 1024px) {
     .halls {
-        padding: 35px 0;
+        padding: 35px 0 70px 0;
     }
 
     .halls__list {
@@ -70,7 +71,7 @@
 
 @media (max-width: 768px) {
     .halls {
-        padding: 30px 0;
+        padding: 30px 0 62px 0;
     }
 
     .halls__list {
@@ -90,7 +91,7 @@
 
 @media (max-width: 480px) {
     .halls {
-        padding: 15px 0;
+        padding: 15px 0 30px 0;
     }
 
     .halls__list {
