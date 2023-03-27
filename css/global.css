@@ -90,6 +90,15 @@ iframe {
 
 
 @media (max-width: 1024px) {
+    body {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .container {
+        padding: 0 60px;
+    }
+
     .section {
         padding: 35px 0;
     }
@@ -101,6 +110,15 @@ iframe {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
     .section__title {
         font-size: 24px;
         line-height: 36px;
@@ -112,6 +130,15 @@ iframe {
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
     .section__title {
         font-size: 14px;
         line-height: 18px;

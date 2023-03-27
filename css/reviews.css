@@ -5,8 +5,11 @@
 .review__item {
     max-width: 980px;
     margin: 0 auto;
-    margin-bottom: 50px;
-    /* display: flow-root; */
+    /* width: auto; */
+}
+
+.swiper {
+    max-width: 980px;
 }
 
 .review__item:last-child {
@@ -37,13 +40,12 @@
 }
 
 .review__picture {
-    margin-right: 20px;
+    /* margin-right: 20px; */
     display: inline-block;
     text-align: center;
 }
 
 .review__wrapper {
-    float: right;
     padding: 52px 0 0 0;
 }
 
@@ -53,60 +55,84 @@
     white-space: pre-line;
 }
 
-@media (max-width: 1024px) {
-    .rewiew {
-        padding: 35px 0;
-    }
+.button-right, .button-left {
+    position: absolute;
+    width: 35px;
+    height: 65px;
+    top: calc(50% - 32.5px);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+
+.button-right {
+    right: 0;
+}
+
+.button-left {
+    left: 0;
+}
+
+.slider-container {
+    position: relative;
+}
+
+.inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    min-width: 0;
+}
+
+
+@media (max-width: 1150px) {
     .review__title {
         margin-bottom: 26px;
     }
-    
-    .review__item {
-        max-width: 751px;
-        display: flex;
-        margin-bottom: 40px;
-        /* display: flow-root; */
+
+    .swiper {
+        max-width: 904px;
     }
-    
+
+    .review__box::after  {
+        display: none;
+    }
+
     .review__box {
         width: 172px;
         height: 172px;
         margin-bottom: 21px;
     }
-    
-    .review__picture {
-        margin-right: 20px;
-        display: inline-block;
-        text-align: center;
-    }
-    
-    .review__wrapper {
-        float: right;
-        padding: 52px 0 0 0;
-    }
-    
+
     .review__text {
-        font-size: 18px;
-        line-height: 26px;
-        display: inline-block;
         max-width: 515px;
-        white-space: pre-line;
+        text-align: left;
+    }
+
+    .button-right, .button-left {
+        width: 35px;
+        height: 60px;
+        top: calc(50% - 30px);
+    }
+
+    .review__text {
+        max-width: 515px;
+    }
+
+    .inside {
+        gap: 12px;
     }
 }
 
-@media (max-width: 768px) {
-    .rewiew {
-        padding: 30px 0;
-    }
 
+@media (max-width: 910px) {
     .review__title {
         margin-bottom: 31px;
-    }
-    
-    .review__item {
-        max-width: 565px;
-        margin-bottom: 30px;
-        /* display: flow-root; */
     }
     
     .review__box {
@@ -114,47 +140,40 @@
         height: 151px;
         margin-bottom: 17px;
     }
-    
-    .review__picture {
-        margin-right: 12px;
-        display: inline-block;
-    }
 
     .review__caption {
         font-size: 14px;
         line-height: 20px;
     }
-    
-    .review__wrapper {
-        float: right;
-        padding: 20px 0 0 0;
-    }
-    
+
     .review__text {
-        font-size: 16px;
-        line-height: 22px;
-        display: inline-block;
-        white-space: pre-line;
+        max-width: 393px;
+    }
+
+    .review__wrapper {
+        padding: 30px 0 0 0;
+    }
+
+    .button-left .button-right {
+        width: 36px;
+        height: 50px;
+        top: calc(50% - 25px);
     }
 }
 
-@media (max-width: 480px) {
-    .rewiew {
-        padding: 15px 0;
-    }
-
+@media (max-width: 710px) {
     .review__title {
         margin-bottom: 15px;
     }
-    
-    .review__item {
-        max-width: 565px;
-        margin-bottom: 20px;
-        display: flex;
+
+    .inside {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 16px;
+    }
+
+    .review__wrapper {
+        padding: 0;
     }
     
     .review__box {
@@ -173,19 +192,11 @@
 
     .review__caption {
         text-align: center;
-        font-size: 14px;
-        line-height: 20px;
     }
     
-    .review__wrapper {
-        float: right;
-        padding: 0;
-    }
-    
-    .review__text {
-        font-size: 12px;
-        line-height: 16px;
-        display: inline-block;
-        white-space: pre-line;
+    .button-right, .button-left {
+        width: 20px;
+        height: 28px;
+        top: calc(20% - 14px);
     }
 }

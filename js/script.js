@@ -10,7 +10,6 @@ const modalTitle = $('.modal__title');
 const menuOverlay = $('.header__overlay');
 const menu = $('.header__menu');
 const menuBox = $('.header__box');
-// const menuBtn = $('.header__button--mobile');
 const menuLink = $('.header__link');
 const burgerBtn = $('.header__burger');
 const closeMenu = $('.header__close');
@@ -107,7 +106,6 @@ burgerBtn.click(function() {
 closeMenu.click(closeNav);
 
 
-
 menuOverlay.click(function(event){
     if(event.target === this) {
         closeNav();
@@ -176,6 +174,46 @@ ymaps.ready(init);
             // myMap.controls.remove('fullscreenControl');
             // myMap.controls.remove('zoomControl');
         }
+
+// Слайдер
+
+new Swiper('.swiper', {
+    slidesPerView: 1,
+    // spaceBetween: 20,
+    loop: true,
+    centeredSlides: true,
+
+    navigation: {
+        nextEl: '.button-right',
+        prevEl: '.button-left',
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    // },
+
+    mousewheel: true,
+    keyboard: true,
+
+//     breakpoints: {
+//         // when window width is >= 320px
+//         320: {
+//             slidesPerView: 2,
+//             spaceBetween: 20
+//         },
+//         // when window width is >= 480px
+//         480: {
+//             slidesPerView: 3,
+//             spaceBetween: 30
+//         },
+//         // when window width is >= 640px
+//         640: {
+//             slidesPerView: 4,
+//             spaceBetween: 40
+//         }
+// }
+});
 
 
 // Календарь
