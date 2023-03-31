@@ -12,6 +12,7 @@
     background-size: cover;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .heading--vibes {
@@ -138,10 +139,18 @@
     white-space: pre-line;
 }
 
+.contacts__title--rooms {
+    margin-top: 32px;
+}
+
 
 @media (max-width: 1024px) {
     .back {
         padding: 35px 0 20px 0;
+    }
+
+    .heading {
+        margin-bottom: 36px;
     }
     
     .heading__title {
@@ -188,6 +197,11 @@
         grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
         grid-template-rows: 172px;
     }
+
+    .contacts__title--rooms {
+        margin-top: 13px;
+    }
+
 }
 
 @media (max-width: 768px) {
