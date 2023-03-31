@@ -1,3 +1,7 @@
+.menu {
+        display: none;
+    }
+
 @media (max-width: 980px) {
     .menu__overlay {
         position: fixed;
@@ -24,7 +28,7 @@
         left: 0;
         right: 0;
         z-index: 150;
-        display: none;
+        /* display: none; */
     }
 
     .menu__item {

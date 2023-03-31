@@ -15,7 +15,8 @@ const modalTitle = $('.modal__title');
 // const closeMenu = $('.header__close');
 
 const menuOverlay = $('.menu__overlay');
-const menu = $('.menu__nav');
+// const menu = $('.menu__nav');
+const menu = $('.menu');
 
 const menuLink = $('.menu__link');
 const menuBox = $('.menu__box');
