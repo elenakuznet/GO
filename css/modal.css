@@ -45,6 +45,11 @@
 }
 
 
+.modal__button {
+    color: #6C0287;
+}
+
+
 @media (max-width: 700px) {
     .modal__main {
         padding: 60px 100px 80px 100px;
@@ -54,8 +59,10 @@
 
 @media (max-width: 580px) {
     .modal {
-        padding: 100px 0 0 0;
+        z-index: 200;
+        padding: 20px;
     }
+
     .modal__main {
         padding: 60px 30px 80px 30px;
     }
@@ -65,7 +72,14 @@
         line-height: 30px;
     }
 
+    .modal__button {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
     .modal__close {
+        top: 10px;
+        right: 10px;
         width: 30px;
         height: 30px;
     }

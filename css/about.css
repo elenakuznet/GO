@@ -304,6 +304,7 @@
         'two'
         'one'
         'three';
+        gap: 15px;
     }
     
     .about__description {
@@ -313,16 +314,12 @@
     }
     
     .about__description:not(:last-child) {
-        margin-bottom: 28px;
+        margin-bottom: 16px;
         white-space: normal;
     }
     
     .quote {
-        display: flow-root;
-        max-width: 500px;
-        position: relative;
-        margin: 0;
-        padding: 0 0 0 31px;
+        padding: 0 0 0 15px;
     }
     
     .quote__text {
@@ -330,7 +327,7 @@
         font-size: 18px;
         line-height: 26px;
         margin-bottom: 13px;
-        white-space: pre-line;
+        /* white-space: pre-line; */
     }
     
     .quote__text::before {
@@ -358,7 +355,7 @@
     }
     
     .quote__subtitle {
-        float: right;
+        display: flex;
     }
     
     .quote__img {

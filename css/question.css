@@ -1,7 +1,3 @@
-.question {
-    padding: 50px 0;
-}
-
 .question__title {
     margin-bottom: 40px;
 }
@@ -10,13 +6,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-weight: 700;
-    font-size: 24px;
-    padding: 30px 70px;
+    padding: 20px 70px;
     margin-bottom: 20px;
     /* line-height: 46px; */
     list-style: none;  
     cursor: pointer;
+}
+
+.acc__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
 }
 
 .question__item:nth-of-type(odd) {
@@ -159,7 +159,6 @@
     align-items: center;
 }
 
-
 /* .question__item:nth-of-type(odd)::after {
     background-image: url("../image/question/open-white.svg");
     background-repeat: no-repeat;
@@ -200,20 +199,22 @@
 
 
 @media (max-width: 1024px) {
-    .question {
-        padding: 50px 0;
-    }
-    
     .question__title {
         margin-bottom: 26px;
     }
     
     .question__item {
-        font-size: 20px;
-        line-height: 24px;
-        padding: 12px 25px;
+        padding: 11.5px 25px;
         margin-bottom: 16px;
         line-height: 46px;  
+    }
+
+    .question__item:last-child {
+        display: none;
+    }
+
+    .question__item:nth-child(4){
+        margin-bottom: 0;
     }
 
     .question__item:nth-of-type(odd) {
@@ -224,6 +225,11 @@
     .question__item:nth-of-type(even) {
         background-color:  var(--white);
         color: #1C1A1A;
+    }
+
+    .acc__title {
+        font-size: 20px;
+        line-height: 24px;
     }
 
     .acc__even {
@@ -277,19 +283,18 @@
 
 
 @media (max-width: 768px) {
-    .question {
-        padding: 30px 0;
-    }
-    
     .question__title {
         margin-bottom: 30px;
     }
     
     .question__item {
-        font-size: 18px;
-        line-height: 24px;
         padding: 12px 54px;
         margin-bottom: 16px;
+    }
+
+    .acc__title {
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .acc__text {
@@ -300,24 +305,23 @@
 }
 
 @media (max-width: 480px) {
-    .question {
-        padding: 15px 0;
-    }
-    
     .question__title {
         margin-bottom: 15px;
     }
     
     .question__item {
-        font-size: 12px;
-        line-height: 16px;
-        padding: 7px 10px;
+        padding: 7px 12px;
         margin-bottom: 10px; 
     }
 
     .acc__accord {
         width: 30px;
         height: 30px;
+    }
+
+    .acc__title {
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .acc__even {
@@ -331,6 +335,47 @@
     }
 
     .acc__even--active {
+        width: 30px;
+        height: 30px;
+    }
+
+    .acc__even:hover {
+        width: 30px;
+        height: 30px;
+    }
+
+    .acc__even:active {
+        width: 30px;
+        height: 30px;
+    }
+
+    .acc__even--active {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .acc__accord {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .acc__accord--active {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .acc__accord--hover {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .acc__accord:hover {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .acc__accord:active {
         width: 30px;
         height: 30px;
     }

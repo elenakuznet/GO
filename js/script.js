@@ -1,16 +1,24 @@
 const modal = $('.modal');
 const modalMain = $('.modal__main');
 
-const openBtn = $('.header__button');
+const openBtn = $('.button');
 const closeBtn = $('.modal__close');
 
 const modalForm = $('.modal__form');
 const modalTitle = $('.modal__title');
 
-const menuOverlay = $('.header__overlay');
-const menu = $('.header__menu');
-const menuBox = $('.header__box');
-const menuLink = $('.header__link');
+// const menuOverlay = $('.header__overlay');
+// const menu = $('.header__menu');
+// const menuBox = $('.header__box');
+// const menuLink = $('.header__link');
+// const burgerBtn = $('.header__burger');
+// const closeMenu = $('.header__close');
+
+const menuOverlay = $('.menu__overlay');
+const menu = $('.menu__nav');
+
+const menuLink = $('.menu__link');
+const menuBox = $('.menu__box');
 const burgerBtn = $('.header__burger');
 const closeMenu = $('.header__close');
 

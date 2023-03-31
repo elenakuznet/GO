@@ -152,7 +152,7 @@
 
 @media (max-width: 1200px) {
     .banner__content {
-        margin-bottom: 68px;
+        margin-bottom: 35px;
     }
 
     .banner__arrow {
@@ -301,14 +301,12 @@
     }
 
     .banner__content {
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
 
     .banner__wrapper::after {
-        width: 57vw;
-        /* width: 309px;
-        height: 379px;
-         */
+        /* width: 57vw; */
+        width: 46vw;
     }
 
     .banner__subtitle {

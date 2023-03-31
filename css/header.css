@@ -62,16 +62,16 @@
 
 .header__button {
     outline: 3px solid var(--fuchsia, #cd06ff);
-    border-radius: 10px;
+    /* border-radius: 10px;
     border: 0;
     padding: 9px 29px 10px;
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    text-transform: uppercase; */
     background: none;
-    transition: background 0.3s ease-in;
+    color: var(--white);
+    /* transition: background 0.3s ease-in; */
 }
 
 .header__button:hover {
@@ -103,11 +103,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 97px;
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
     .header {
         padding: 30px 0 15px 0;
     }
@@ -132,23 +132,27 @@
         font-size: 18px;
         line-height: 24px;
     }
+
+    .header__box {
+        gap: 79px;
+    }
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 980px) {
     .header {
         padding: 32px 0 15px;
         position: relative;
         z-index: 200;
     }
 
-    .header__overlay {
+    /* .header__overlay {
         position: fixed;
         inset: 0;
         display: none;
         background: rgba(27, 26, 27, 0.7);
         cursor: pointer;
-    }
+    } */
 
     .header__wrapper {
         display: flex;
@@ -166,14 +170,15 @@
         display: block;
     }
 
-    .header__list {
+    /* .header__list {
         flex-direction: column;
         gap: 39px;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .header__menu {
+        display: none;
         padding: 58px 0;
         background-color: #1B1A1B;
         display: none;
@@ -184,24 +189,33 @@
         right: 0;
         /* z-index: 100; */
     }
-
-    .header__item {
+/* 
+    /* .header__item {
+        width: 100%;
         margin-right: 0;
-    }
+        text-align: center;
+        padding: 0 19px;
+    } */
 
     .header__buttons {
         display: block;
     }
 
-    .header__link {
+    /* .header__link {
         font-weight: 400;
         font-size: 22px;
         line-height: 22px;
-    }
+    } */
 }
 
-@media (max-width: 568px) {
+@media (max-width: 668px) {
     .header__box {
+        display: none;
+    }
+
+    
+
+    /* .header__box {
         background-color: #1B1A1B;
         position: absolute;
         top: 100px;
@@ -209,14 +223,14 @@
         right: 0;
         display: none;
         padding: 35px 0 27px 0;
-    }
+    } */
 
-    .header__menu {
+    /* .header__menu {
+        display: none;
         position: static;
         padding: 36px 0 0 0;
         margin-top: -75px;
-        /* padding: 0; */
-    }
+    } */
 
     .header__list  {
         padding: 0;

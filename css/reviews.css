@@ -46,7 +46,7 @@
 }
 
 .review__wrapper {
-    padding: 52px 0 0 0;
+    padding: 58px 0 0 0;
 }
 
 .review__text {
@@ -103,6 +103,10 @@
         display: none;
     }
 
+    .review__wrapper {
+        padding: 35px 0 0 0;
+    }
+
     .review__box {
         width: 172px;
         height: 172px;
@@ -125,7 +129,8 @@
     }
 
     .inside {
-        gap: 12px;
+        /* gap: 12px; */
+        gap: 38px;
     }
 }
 

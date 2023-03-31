@@ -88,6 +88,18 @@ iframe {
     margin-bottom: 40px;
 }
 
+.button {
+    border-radius: 10px;
+    border: 0;
+    padding: 9px 29px 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in;
+}
+
+
 
 @media (max-width: 1024px) {
     body {
@@ -142,10 +154,11 @@ iframe {
     .section__title {
         font-size: 14px;
         line-height: 18px;
-        margin-bottom: 15px;
+        /* margin-bottom: 15px; */
     }
 
     .section {
         padding: 15px 0;
     }
+
 }

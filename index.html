@@ -17,22 +17,22 @@
     <link rel="stylesheet" href="airdatepicker/air-datepicker.css">
     <link rel="stylesheet" href="timepicker/jquery.timepicker.css">
     <link rel="stylesheet" href="timepicker/jquery.timepicker.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=f4112ee9-ccf1-46a4-aaa2-b243dc478c03&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f4112ee9-ccf1-46a4-aaa2-b243dc478c03&lang=ru_RU"></script>
     <script defer src="js/jquery-3.6.3.min.js"></script>
     <script defer src="js/jquery-ui.min.js"></script>
     <script defer src="airdatepicker/air-datepicker.js"></script>
     <script defer src="timepicker/jquery.timepicker.js"></script>
     <script defer src="timepicker/jquery.timepicker.min.js"></script>
     <script defer src="js/script.js"></script>
-</head>
+</head> 
 
 <body>
         <header class="header">
-            <div class="header__overlay"></div>
+            <!-- <div class="header__overlay"></div> -->
             <div class="container">
                 <div class="header__wrapper">
                     <div class="header__buttons">
@@ -57,7 +57,8 @@
                                 <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li> 
                             </ul>
                         </nav>
-                        <button class="header__button" type="button">Заказать звонок</button>
+
+                        <button class="header__button button" type="button">Заказать звонок</button>
                     </div>
                         
                     <!-- <button class="header__button" type="button">Заказать звонок</button> -->
@@ -113,7 +114,8 @@
                                 <p class="equipment__text">Настольные игры</p>
                         </li>
                         <li class="equipment__item equipment__item--netflix">
-                                <p class="equipment__text">Кино сервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</p>
+                                <p class="equipment__text">Кино сервисы Netflix, IVI, 
+                                    MegoGo, Кинопоиск, Okko</p>
                         </li>
                         <li class="equipment__item equipment__item--sony">
                                 <p class="equipment__text">PlayStation 5</p>
@@ -140,10 +142,8 @@
         </section>
         <!-- Form 2 -->
         <section id="booking" class="booking">
-            
-                <div class="">
                     <div class="container">
-                        <h2 class="section__title booking__title">Забронировать зал просто</h2>
+                        <h2 class="booking__title">Забронировать зал просто</h2>
                             <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
                                 <fieldset class="booking__row ">
                                     <legend class="booking__legend">Выбери зал</legend>
@@ -208,14 +208,14 @@
                                         <div class="data">
                                                     <div class="booking__column booking__column--first">
                                                     <div class="booking__select">
-                                                        <label class="booking__date"> 
+                                                        <div class="booking__date"> 
                                                             <input class="booking__input" placeholder="Дата" name="date" id="airdatepicker" required>
                                                             <button class="booking__arrow"></button>
-                                                        </label>
-                                                        <label class="booking__date">
+                                                        </div>
+                                                        <div class="booking__date">
                                                             <input class="booking__input" placeholder="Время" type="text" name="time" id="timepicker" required>
                                                             <button class="booking__arrow"></button>
-                                                        </label>
+                                                        </div>
                                                     </div>
                                                     <label class="booking__number">
                                                         <input class="input" type="number" name="people" placeholder="Сколько человек" required>
@@ -244,7 +244,6 @@
                                 
                             </form>
                         </div> 
-                </div>
         </section>
         <section id="about" class="section about">
             <div class="container">
@@ -339,15 +338,13 @@
                                 </svg>    
                     </button>
                 </div>
-                
-
             </div>
 
         </section>
         <section id="question" class="section question">
             <div class="container">
                 <h2 class="section__title question__title">Частые вопросы</h2>
-                <ul class="acc__list">
+                <ul class="acc">
 
                     <li class="question__item acc__item">
                         <h3 class="acc__button">
@@ -358,7 +355,7 @@
                         <p class="acc__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38</p>
                     </li>
 
-                    <li class="question__item acc__item--even">
+                    <li class="question__item acc__item acc__item--even">
                         <h3 class="acc__button">
                             <span class="acc__title">
                                 Могут ли мне вернуть деньги за бронь?
@@ -376,7 +373,7 @@
                         <p class="acc__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону 8 (999) 958 - 48 - 38</p>        
                     </li>
 
-                    <li class="question__item acc__item--even">
+                    <li class="question__item acc__item acc__item--even">
                         <h3 class="acc__button">
                             <span class="acc__title">
                                 Как получить VIP карту?
@@ -407,7 +404,7 @@
                             <div class="address__location">
                                 <img class="address__image icon" src="image/contacts/location.svg" alt="адресс иконка">
                                 <p class="address__text">г. Москва
-                                    ул. Усачёва, 29 к3</p>
+                                    ул.&nbsp;Усачёва,&nbsp;29к3</p>
                             </div>
                             <div class="address__mobile">
                                 <img class="address__image" src="image/contacts/phone.svg" alt="телефон иконка">
@@ -455,7 +452,7 @@
                     <p>© <a class="footer__link" href="#">Game Over</a>, 2022</p>
                     <div class="footer__list">
                         <p>Design by Anastasia Ilina</p>
-                        <a class="footer__mail" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></li>
+                        <a class="footer__mail" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -488,17 +485,38 @@
             </form>
         </div>  -->
     <!-- </div> -->
+    <div class="menu">
+        <div class="menu__overlay"></div>
+                    <div class="container">
+                        <div class="menu__nav">
+                            <nav class="menu__box">
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__link" href="#rooms">Залы</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#booking">Бронь</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li> 
+                                </ul>
+                            </nav>
+                            <button class="button menu__button" type="button">Заказать звонок</button>
+                        </div>   
+                    </div>
+    </div>
+                    
+                        
+
     <div class="modal">
+
         <div class="modal__main">
             <h3 class="modal__title">Заказать звонок</h3>
             <form class="modal__form">
-                <label class="booking__name"><span class="label">Имя</span> 
+                <label class="modal__name"><span class="label">Имя</span> 
                     <input class="input modal__input" type="text" name="name" required>
                 </label>
-                <label class="booking__phone"><span class="label">Телефон</span>
+                <label class="modal__phone"><span class="label">Телефон</span>
                     <input class="input modal__input" type="tel" name="tel" required>
                 </label>
-                <button class="booking__button" type="submit">Забронировать</button>
+                <button class="modal__button button" type="submit">Позвонить мне</button>
             </form>
             <button class="modal__close"><img src="image/close.svg" alt=""></button>
         </div>
