@@ -5,33 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/index.css">
+    <script defer src="../../js/jquery-3.6.3.min.js"></script>
+    <script defer src="../../js/jquery-ui.min.js"></script>
+    <script defer src="../../js/script.js"></script>
     <title>Star wars</title>
 </head>
 <body>
-        <header class="header">
-            <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__burger">
+    <header class="header">
+        <!-- <div class="header__overlay"></div> -->
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__buttons">
+                    <button class="header__burger">
                         <svg width="54" height="29" viewbox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <rect width="54" height="5" rx="2" fill=""/>
                             <rect y="12" width="54" height="5" rx="2" fill=""/>
                             <rect y="24" width="31" height="5" rx="2" fill=""/>
                         </svg>
-                    </div>
-                    <a href="#"><img class="header__logo" src="../../image/header/logo.svg" alt="logo"></a>
-                    <nav>
+                    </button>
+                    <button class="header__close"><img src="image/header/close_header.svg" alt=""></button>
+                </div>
+                
+                <img class="header__logo" src="../../image/header/logo.svg" alt="logo">
+                <div class="header__box">
+                    <nav class="header__menu">
                         <ul class="header__list">
                             <li class="header__item"><a class="header__link" href="#rooms">Залы</a></li>
-                            <li class="header__item"><a class="header__link" href="../../index.html#about">О нас</a></li>
-                            <li class="header__item"><a class="header__link" href="../../index.html#booking">Бронь</a></li>
-                            <li class="header__item"><a class="header__link" href="../../index.html#reviews">Отзывы</a></li>
-                            <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
+                            <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
+                            <li class="header__item"><a class="header__link" href="#booking">Бронь</a></li>
+                            <li class="header__item"><a class="header__link" href="#reviews">Отзывы</a></li>
+                            <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li> 
                         </ul>
                     </nav>
-                    <button class="header__button" type="button">Заказать звонок</button>
-                </div>
-            </div>   
-        </header>
+
+                    <button class="header__button button" type="button">Заказать звонок</button>
+                </div>   
+                <!-- <button class="header__button" type="button">Заказать звонок</button> -->
+            </div>
+        </div>   
+    </header>
     <main>
             <div class="container">
                 <a class="back" href="../../index.html"><img src="../../image/halls_style/Arrow.svg" alt=""> Вернуться назад</a>
@@ -141,5 +153,40 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu">
+        <div class="menu__overlay"></div>
+                    <div class="container">
+                        <div class="menu__nav">
+                            <nav class="menu__box">
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__link" href="#rooms">Залы</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#booking">Бронь</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="#contacts">Контакты</a></li> 
+                                </ul>
+                            </nav>
+                            <button class="button menu__button" type="button">Заказать звонок</button>
+                        </div>   
+                    </div>
+    </div>
+
+
+    <div class="modal">
+        <div class="modal__main">
+            <h3 class="modal__title">Заказать звонок</h3>
+            <form class="modal__form">
+                <label class="modal__name"><span class="label">Имя</span> 
+                    <input class="input modal__input" type="text" name="name" required>
+                </label>
+                <label class="modal__phone"><span class="label">Телефон</span>
+                    <input class="input modal__input" type="tel" name="tel" required>
+                </label>
+                <button class="modal__button button" type="submit">Позвонить мне</button>
+            </form>
+            <button class="modal__close"><img src="../../image/close.svg" alt=""></button>
+        </div>
+    </div>
 </body>
 </html>
