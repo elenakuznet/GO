@@ -84,6 +84,7 @@
 }
 
 .banner__button {
+    display: inline-block;
     padding: 25px 69px;
     border: 0;
     border-radius: 10px;
